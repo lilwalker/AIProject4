@@ -1,0 +1,22 @@
+import java.awt.List;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+
+public class Reader {
+	
+	String file;
+	
+	public Reader(String name){
+		this.file = file;
+	}
+	
+	public void importData() throws IOException{
+		List lines = (List) Files.readAllLines((file));
+		for (int line = 0; line < lines.getItemCount(); line++){
+			System.out.println(lines.getItem(line));
+		}
+	}
+
+}

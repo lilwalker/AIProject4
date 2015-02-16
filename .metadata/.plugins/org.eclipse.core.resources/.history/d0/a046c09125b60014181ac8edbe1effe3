@@ -1,0 +1,12 @@
+
+public class Item {
+	
+	Integer weight;
+	Bag bag;
+	
+	public Item (int weight, Bag bag){
+		this.weight = weight;
+		this.bag = bag;
+	}
+
+}
