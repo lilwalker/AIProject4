@@ -1,0 +1,41 @@
+import java.util.List;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+
+public class Reader {
+	
+	Path path;
+	
+	public Reader(String name){
+		this.path = Paths.get(name);
+	}
+	
+	public void importData(Constraints constraints) throws IOException{
+		List<String> lines = Files.readAllLines(path);
+		int linenum = 1;
+		int vars = 0; //the number of variables
+		int bags = 0; //the number of bags
+		//first set of data: items
+		while (!lines.get(linenum).startsWith("#")){
+			constraints.addItems(lines.get(linenum));
+			linenum++;
+		}
+		linenum++; 
+		//reached next set of data: bags
+		while (!lines.get(linenum).startsWith("#")){
+			constraints.addBags(lines.get(linenum));
+			linenum++;
+		}
+		linenum++;
+		//next set of data: fit limits
+		constraints.addLimits(lines.get(linenum));
+		linenum++;
+		//next set of data: unary inclusive
+		//next set of data: unary exclusive
+		
+	}
+
+}

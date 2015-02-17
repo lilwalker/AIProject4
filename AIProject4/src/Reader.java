@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -13,24 +14,45 @@ public class Reader {
 		this.path = Paths.get(name);
 	}
 	
-	public void importData() throws IOException{
+	public Constraints importData() throws IOException{
+		Constraints constraints = new Constraints();
 		List<String> lines = Files.readAllLines(path);
 		int linenum = 1;
 		int vars = 0; //the number of variables
 		int bags = 0; //the number of bags
+		ArrayList<String> inclusive = new ArrayList<String>();
+		ArrayList<String> exclusive = new ArrayList<String>();
+		//first set of data: items
 		while (!lines.get(linenum).startsWith("#")){
-			vars++;
+			constraints.addItems(lines.get(linenum));
+			linenum++;
 		}
-			
-		/*for (int linenum = 1; linenum < lines.size(); linenum++){
-			String line = lines.get(linenum);
-			if (line.startsWith("#"))
-					System.out.println(line);
-			if (line.contains("variable")){
-				linenum++;
-				while (!line.startsWith("#"))
-			}
-		}*/
+		linenum++; 
+		//reached next set of data: bags
+		while (!lines.get(linenum).startsWith("#")){
+			constraints.addBags(lines.get(linenum));
+			linenum++;
+		}
+		linenum++;
+		//next set of data: fit limits
+		while (!lines.get(linenum).startsWith("#")){ 
+			constraints.addLimits(lines.get(linenum));
+		}
+		linenum++;
+		//next set of data: unary inclusive
+		while (!lines.get(linenum).startsWith("#")){
+			inclusive.add(lines.get(linenum));
+			linenum++;
+		}
+		//next set of data: unary exclusive
+		linenum++;
+		while (!lines.get(linenum).startsWith("#")){
+			exclusive.add(lines.get(linenum));
+			linenum++;
+		}
+		constraints.addCMatrix(inclusive,exclusive);
+		return constraints;
 	}
+	
 
 }

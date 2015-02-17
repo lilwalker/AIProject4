@@ -1,0 +1,13 @@
+
+public class ArrayPrinter {
+
+	public ArrayPrinter(Integer[][] board){
+		for (int y = 0; y< board.length;y--){
+			for (int x = 0; x<board[0].length; x++){
+				System.out.print(board[x][y]+" ");
+			}
+			System.out.println();
+		}
+	}
+	
+}

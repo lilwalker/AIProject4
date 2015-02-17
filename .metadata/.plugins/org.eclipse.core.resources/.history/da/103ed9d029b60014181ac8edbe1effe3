@@ -1,0 +1,32 @@
+import java.util.ArrayList;
+
+
+public class Constraints {
+	
+	ArrayList<Item> items;
+	ArrayList<Bag> bags;
+	Integer[][] cmatrix;
+	int upperlimit;
+	int lowerlimit;
+	//need variables for binary equals, binary not-equals, mutual exclusive
+	
+	public void addItems(String line){
+		
+	}
+	
+	public void addBags(String line){
+		
+	}
+
+	public void addLimits(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void addCMatrix(ArrayList<String> inclusive,
+			ArrayList<String> exclusive) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

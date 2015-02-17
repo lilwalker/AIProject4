@@ -1,0 +1,48 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+
+
+public class CMatrix {
+	
+	HashMap<String, Integer> itemindex;
+	HashMap<String, Integer> bagindex;
+	int[][] matrix;
+	
+	public CMatrix(ArrayList<Item> items, ArrayList<Bag> bags, ArrayList<String> inclusive,
+			ArrayList<String> exclusive){
+		HashMap itemindex = new HashMap<String, Integer>();
+		HashMap bagindex = new HashMap<String, Integer>();
+		MakeCMatrix(items, bags, inclusive, exclusive);
+		
+	}
+	
+	public void MakeCMatrix(ArrayList<Item> items, ArrayList<Bag> bags, ArrayList<String> inclusive,
+			ArrayList<String> exclusive){
+		this.matrix = new int[items.size()][bags.size()];
+		for (int i = 0; i<items.size(); i++){
+			System.out.println(items.get(i).letter + "   "+ i);
+			itemindex.put(items.get(i).letter, i);
+		}
+		for (int b = 0; b<items.size(); b++){
+			bagindex.put(items.get(b).letter, b);
+		}	
+		for (int c = 0; c<inclusive.size(); c++){
+			String[] parts = inclusive.get(c).split(" ");
+			for (int j = 1; j<parts.length; j++){
+				matrix[itemindex.get(parts[0])][bagindex.get(parts[j])] = 1;
+			}
+		}
+		for (int c = 0; c<inclusive.size(); c++){
+			String[] parts = inclusive.get(c).split(" ");
+			for (int i = 0; i<bags.size(); i++){
+				matrix[itemindex.get(parts[0])][i] = 1;
+			}
+			for (int j = 1; j<parts.length; j++){
+				matrix[itemindex.get(parts[0])][bagindex.get(parts[j])] = 0;
+			}
+		}
+		
+	}
+	
+
+}
