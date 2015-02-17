@@ -49,18 +49,10 @@ public class CMatrix {
 			bagindex.put(bags.get(b).letter, b);
 		}	
 		
-		/* 
-		 * Apply Inclusive constraints. For each constraint, iterate through the bags, then 
-		 * through the bags specified in the constraint. If a bag matched a bag in the constraint,
-		 * the cell corresponding to that bag and the item in the constraint is given a value of 
-		 * 1. Else the cell is set to 0, because the assignment cannot be made.
-		 */
+		
 		for (int c = 0; c<inclusive.size(); c++){
-			// split the constraint by spaces. "C p q" becomes the String array {C,p,q}
 			String[] parts = inclusive.get(c).split(" ");
-			// iterate through bags
 			for (int i  = 0; i < bags.size(); i++){
-				//if the bag is not found, 
 				int foundbag = 0;
 				for (int j = 1; j < parts.length; j++){
 					if (bags.get(i).letter.equals(parts[j])){
@@ -70,13 +62,6 @@ public class CMatrix {
 				constmatrix[itemindex.get(parts[0])][bagindex.get(bags.get(i).letter)] = foundbag;
 			}
 		}
-		
-		/* 
-		 * Apply Exclusive constraints. For each constraint, iterate through the bags, then 
-		 * through the bags specified in the constraint. If a bag matched a bag in the constraint,
-		 * the cell corresponding to that bag and the item in the constraint is given a value of 
-		 * 0, because the assignment cannot be made. Else the cell is set to 1.
-		 */
 		for (int c = 0; c<exclusive.size(); c++){
 			String[] parts = exclusive.get(c).split(" ");
 			for (int i  = 0; i < bags.size(); i++){

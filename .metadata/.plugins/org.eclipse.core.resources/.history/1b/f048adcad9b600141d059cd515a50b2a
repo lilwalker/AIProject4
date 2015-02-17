@@ -1,9 +1,5 @@
 import java.util.HashMap;
 
-/*
- * This is just used to print stuff out conveniently
- */
-
 
 public class ArrayPrinter {
 
