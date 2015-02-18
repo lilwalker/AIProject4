@@ -3,16 +3,18 @@ C 10
 D 10
 E 10
 F 10
+G 10
+H 10
 ##### - values
 p 40
 q 30
 ##### - fitting limits
+1 3
 ##### - unary inclusive
 C q
-D q
-E p
-F q
+D p
 ##### - unary exclusive
+F p
 ##### - binary equals
 ##### - binary not equals
 ##### - binary simultaneous

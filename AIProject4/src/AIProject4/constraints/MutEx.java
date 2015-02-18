@@ -18,11 +18,13 @@ public class MutEx implements Constraint {
 	
 	@Override
 	public boolean satisfies(State state) {
+		ArrayList<String> assigned = new ArrayList<String>();
 		boolean mutex1 = false;
 		boolean mutex2 = false;
 		for (Bag bag : state.getBags()) {
 			if (bag.letter.equals(bag1)) {
 				for (Item item : bag.contents) {
+					assigned.add(item.letter);
 					if (item.letter.equals(item1)) {
 						mutex1 = true;
 						break;
@@ -31,6 +33,7 @@ public class MutEx implements Constraint {
 			}
 			if (bag.letter.equals(bag2)) {
 				for (Item item: bag.contents) {
+					assigned.add(item.letter);
 					if (item.letter.equals(item2)) {
 						mutex2 = true;
 						break;
@@ -38,6 +41,7 @@ public class MutEx implements Constraint {
 				}
 			}
 		}
+		if (!(assigned.contains(item1) && assigned.contains(item2))) return true;
 		return !(mutex1 && mutex2);
 	}
 	

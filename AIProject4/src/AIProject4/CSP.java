@@ -53,6 +53,34 @@ public class CSP {
 			return assignments;
 		}
 		Item var = pickMRV(assignments);
+		for (Bag bag : bags){
+			bag.addItem(var);
+			State statea = new State(bags, items);
+			if (constraints.satisfiesAll(statea)){
+				assignments.add(new Assignment(var, bag));
+				ArrayList<Assignment> result = backtrack(assignments);
+				if (!result.isEmpty())
+					return result;
+			}
+			bag.removeItem(var);
+			//arcConsistency();
+		}
+		return new ArrayList<Assignment>();
+	}
+	
+/*	public ArrayList<Assignment> backtrackingSearch(){
+		ArrayList<Assignment> assignments = backtrack(new ArrayList<Assignment>());
+		System.out.println(new ArrayPrinter(assignments));
+		return assignments;
+		
+	}
+	
+	public ArrayList<Assignment> backtrack(ArrayList<Assignment> assignments){
+		System.out.println(assignments.size());
+		if (assignments.size()==items.size()){//every assignment is made
+			return assignments;
+		}
+		Item var = pickMRV(assignments);
 		for (Bag bag : LCVList(var)){
 			bag.addItem(var);
 			if (arcConsistency()){
@@ -65,20 +93,22 @@ public class CSP {
 			arcConsistency();
 		}
 		return new ArrayList<Assignment>();
-	}
+	}*/
 	
 	public ArrayList<Bag> LCVList(Item item){
 		//PriorityQueue<Bag> lcv = new PriorityQueue<Bag>();
 		//Comparator domainsize = new DomainSizeComp();
 		ArrayList<Bag> lcv = new ArrayList<Bag>();
-		ArrayList<Bag> unassigned = (ArrayList<Bag>) domains.get(item.letter).clone();
+		//ArrayList<Bag> unassigned = (ArrayList<Bag>) domains.get(item.letter).clone();
+		ArrayList<Bag> unassigned = (ArrayList<Bag>) bags.clone();
 		int currentdomains = totalDomains();
 		while(!unassigned.isEmpty()){
 			Bag mostFlexible = unassigned.get(0);
 			int bestelimdomains = currentdomains;
 			for (Bag bag: unassigned){
 				bag.addItem(item);
-				if (arcConsistency()){
+				State statea = new State(bags, items);
+				if (constraints.satisfiesAll(statea)){
 					int elimdomains = currentdomains - totalDomains();
 					if (elimdomains < bestelimdomains){
 						mostFlexible = bag;
@@ -172,12 +202,12 @@ public class CSP {
 		Boolean revised = false;
 		for (int i = 0; i<bags.size(); i++){
 			bags.get(i).addItem(currentarc.item1);
-			State statea = new State(bags);
+			State statea = new State(bags, items);
 			if (constraints.satisfiesAll(statea)){
 				Boolean remove = true;
 				for (Bag bag: bags){
 					bag.addItem(currentarc.item2);
-					State stateb = new State(bags);
+					State stateb = new State(bags, items);
 					if (constraints.satisfiesAll(stateb)){
 						remove = false;
 					}
