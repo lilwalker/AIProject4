@@ -1,4 +1,5 @@
 package AIProject4;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 /*
@@ -24,6 +25,13 @@ public class ArrayPrinter {
 				System.out.println(board[x][y]+"   "+x+"   "+y);
 			}
 			//System.out.println();
+		}
+	}
+	
+	public ArrayPrinter(ArrayList<Assignment> assignments){
+		System.out.println("Assignments:");
+		for (Assignment assignment:assignments){
+			System.out.println(assignment.item.letter+"  "+assignment.bag.letter);
 		}
 	}
 	

@@ -10,4 +10,5 @@ public class Assignment {
 		this.bag = bag;
 	}
 
+
 }

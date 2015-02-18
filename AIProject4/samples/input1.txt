@@ -10,6 +10,5 @@ C p
 ##### - unary exclusive
 D p
 ##### - binary equals
-C D
 ##### - binary not equals
 ##### - binary simultaneous

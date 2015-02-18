@@ -31,25 +31,41 @@ public class CSP {
 	
 	public void solve(){
 		arcConsistency();
-		System.out.println(domains);
+		System.out.println(arcConsistency());
+		/*System.out.println(domains);
 		Item next = pickMRV();
 		System.out.println(next.letter);
 		ArrayList<Bag> nextbag = LCVList(next);
-		System.out.println(nextbag);
+		System.out.println(nextbag);*/
+		backtrackingSearch();
 	}
 
-	/*public void backtrackingSearch(){
-		ArrayList<Item> assigned = new ArrayList<Item>();
-		assigned = items;
+	public ArrayList<Assignment> backtrackingSearch(){
+		ArrayList<Assignment> assignments = backtrack(new ArrayList<Assignment>());
+		System.out.println(new ArrayPrinter(assignments));
+		return assignments;
 		
 	}
 	
-	public backtrack(ArrayList<Assignment> assignments, ArrayList<Item> unassigned){
-		if (assignments.size()==items.size()){
+	public ArrayList<Assignment> backtrack(ArrayList<Assignment> assignments){
+		System.out.println(assignments.size());
+		if (assignments.size()==items.size()){//every assignment is made
 			return assignments;
 		}
-		var = pickMRV();
-	}*/
+		Item var = pickMRV(assignments);
+		for (Bag bag : LCVList(var)){
+			bag.addItem(var);
+			if (arcConsistency()){
+				assignments.add(new Assignment(var, bag));
+				ArrayList<Assignment> result = backtrack(assignments);
+				if (!result.isEmpty())
+					return result;
+			}
+			bag.removeItem(var);
+			arcConsistency();
+		}
+		return new ArrayList<Assignment>();
+	}
 	
 	public ArrayList<Bag> LCVList(Item item){
 		//PriorityQueue<Bag> lcv = new PriorityQueue<Bag>();
@@ -107,12 +123,20 @@ public class CSP {
 		return total;
 	}
 
-	public Item pickMRV(){
+	public Item pickMRV(ArrayList<Assignment> assignments){
+		
+		ArrayList<Item> unassigned = (ArrayList<Item>) items.clone();
+		for (int a = 0; a < assignments.size(); a++){
+			for (int i = 0; i < unassigned.size(); i++){
+				if (assignments.get(a).item.letter.equals(unassigned.get(i).letter))
+					unassigned.remove(i);
+			}
+		}
 		
 		int minremaining = domains.get(items.get(0).letter).size();
-		Item currentpick = items.get(0);
+		Item currentpick = unassigned.get(0);
 		
-		for (Item item : items){
+		for (Item item : unassigned){
 			if (domains.get(item.letter).size() < minremaining){
 				minremaining = domains.get(item.letter).size();
 				currentpick = item;
@@ -140,7 +164,7 @@ public class CSP {
 				arcs.addAll(constraints.getNeighbors(currentarc.item1));
 			}
 		}
-		System.out.println(domains);
+		//System.out.println(domains);
 		return true;
 	}
 
