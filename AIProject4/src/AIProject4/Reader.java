@@ -77,7 +77,7 @@ public class Reader {
 		}
 		linenum++;
 		//next set of data: binary mutex
-		while (!lines.get(linenum).startsWith("#")){
+		while (linenum < lines.size() && !lines.get(linenum).startsWith("#")){
 			constraints.addMutex(lines.get(linenum));
 			linenum++;
 		}
