@@ -1,17 +1,18 @@
 ##### - variables
-C 20
-D 30
+C 10
+D 10
 E 10
-F 20
+F 10
 ##### - values
 p 40
 q 30
-r 50
 ##### - fitting limits
 ##### - unary inclusive
-C r q
+C q
+D q
+E p
+F q
 ##### - unary exclusive
-D p
 ##### - binary equals
 ##### - binary not equals
 ##### - binary simultaneous

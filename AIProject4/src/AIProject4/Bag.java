@@ -21,9 +21,18 @@ public class Bag {
 	}
 	
 	public void addItem(Item item){
-		this.contents.add(item);
+		if (!inBag(item))
+			this.contents.add(item);
 	}
 	
+	private boolean inBag(Item item) {
+		for (Item itemin : contents){
+			if (itemin.letter.equals(item.letter))
+				return true;
+		}
+		return false;
+	}
+
 	public void removeItem(Item item){
 		for (int i = 0; i < contents.size(); i++){
 			if (contents.get(i).letter.equals(item.letter)){
