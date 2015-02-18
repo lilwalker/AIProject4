@@ -2,9 +2,9 @@ package AIProject4;
 
 public class Item {
 	
-	String letter;
-	Integer weight;
-	Bag bag;
+	public String letter;
+	public Integer weight;
+	public Bag bag;
 	
 	public Item (String letter, int weight, Bag bag){
 		this.letter = letter;

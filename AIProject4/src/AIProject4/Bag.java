@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public class Bag {
 	
-	String letter;
-	Integer capacity;
-	ArrayList<Item> contents;
+	public String letter;
+	public Integer capacity;
+	public ArrayList<Item> contents;
 	
 	public Bag(String letter, int capacity, ArrayList<Item> contents){
 		this.letter = letter;
