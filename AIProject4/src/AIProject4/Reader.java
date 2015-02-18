@@ -49,20 +49,40 @@ public class Reader {
 		//next set of data: fit limits
 		while (!lines.get(linenum).startsWith("#")){ 
 			constraints.addLimits(lines.get(linenum));
+			linenum++;
 		}
 		linenum++;
 		//next set of data: unary inclusive
 		while (!lines.get(linenum).startsWith("#")){
-			inclusive.add(lines.get(linenum));
+			constraints.addUnaryInc(lines.get(linenum));
 			linenum++;
 		}
-		//next set of data: unary exclusive
 		linenum++;
+		//next set of data: unary exclusive
 		while (!lines.get(linenum).startsWith("#")){
-			exclusive.add(lines.get(linenum));
+			constraints.addUnaryEx(lines.get(linenum));
 			linenum++;
 		}
-		constraints.addCMatrix(inclusive,exclusive);
+		linenum++;
+		//next set of data: binary eq
+		while (!lines.get(linenum).startsWith("#")){
+			constraints.addBinaryEq(lines.get(linenum));
+			linenum++;
+		}
+		linenum++;
+		//next set of data: binary noteq
+		while (!lines.get(linenum).startsWith("#")){
+			constraints.addBinaryNotEq(lines.get(linenum));
+			linenum++;
+		}
+		linenum++;
+		//next set of data: binary mutex
+		while (!lines.get(linenum).startsWith("#")){
+			constraints.addMutex(lines.get(linenum));
+			linenum++;
+		}
+		linenum++;
+		
 		return constraints;
 	}
 	

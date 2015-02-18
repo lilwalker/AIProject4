@@ -1,5 +1,13 @@
 package AIProject4;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import AIProject4.constraints.Binary;
+import AIProject4.constraints.Constraint;
+import AIProject4.constraints.FitLimits;
+import AIProject4.constraints.MutEx;
+import AIProject4.constraints.Unary;
 
 /*
  * Holds the constraints
@@ -12,9 +20,7 @@ public class Constraints {
 	
 	ArrayList<Item> items;
 	ArrayList<Bag> bags;
-	CMatrix cmatrix;
-	int upperlimit;
-	int lowerlimit;
+	List<Constraint> constraints;
 	//need variables for binary equals, binary not-equals, mutual exclusive
 	
 	
@@ -22,6 +28,7 @@ public class Constraints {
 	public Constraints(){
 		this.items = new ArrayList<Item>();
 		this.bags = new ArrayList<Bag>();
+		this.constraints = new ArrayList<Constraint>();
 	}
 	
 	/*
@@ -49,16 +56,31 @@ public class Constraints {
 	//add the upper and lower limits
 	public void addLimits(String string) {
 		String[] parts = string.split(" ");
-		lowerlimit = Integer.valueOf(parts[0]);
-		upperlimit = Integer.valueOf(parts[1]);
+		this.constraints.add(new FitLimits(Integer.parseInt(parts[0]), Integer.parseInt(parts[1])));
 	}
 
-	//create the cmatrix using the unary constraints, items, and bags
-	public void addCMatrix(ArrayList<String> inclusive,
-			ArrayList<String> exclusive) {
-		this.cmatrix = new CMatrix(items, bags, inclusive, exclusive);
-		
-		
+	public void addUnaryInc(String string) {
+		String[] parts = string.split(" ");
+		this.constraints.add(new Unary.Inclusive(parts[0], Arrays.asList(parts).subList(1, parts.length - 1)));
+	}
+	
+	public void addUnaryEx(String string) {
+		String[] parts = string.split(" ");
+		this.constraints.add(new Unary.Exclusive(parts[0], Arrays.asList(parts).subList(1, parts.length - 1)));
+	}
+	
+	public void addBinaryEq(String string) {
+		String[] parts = string.split(" ");
+		this.constraints.add(new Binary.Equals(parts[0], parts[1]));
+	}
+	
+	public void addBinaryNotEq(String string) {
+		String[] parts = string.split(" ");
+		this.constraints.add(new Binary.NotEquals(parts[0], parts[1]));
 	}
 
+	public void addMutex(String string) {
+		String[] parts = string.split(" ");
+		this.constraints.add(new MutEx(parts[0], parts[1], parts[2], parts[3]));
+	}
 }

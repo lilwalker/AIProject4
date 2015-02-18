@@ -38,7 +38,7 @@ public abstract class Unary implements Constraint {
 		this.bags.addAll(bags);
 	}
 	
-	public class Inclusive extends Unary {
+	public static class Inclusive extends Unary {
 		public Inclusive(String bag, List<String> items) {
 			super(bag,items);
 		}
@@ -51,7 +51,7 @@ public abstract class Unary implements Constraint {
 		}
 	}
 	
-	public class Exclusive extends Unary {
+	public static class Exclusive extends Unary {
 		public Exclusive(String bag, List<String> items) {
 			super(bag,items);
 		}

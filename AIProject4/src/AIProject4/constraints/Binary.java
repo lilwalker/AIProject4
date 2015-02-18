@@ -14,7 +14,7 @@ public abstract class Binary implements Constraint {
 		this.item2 = item2;
 	}
 	
-	public class Equals extends Binary {
+	public static class Equals extends Binary {
 		public Equals(String item1, String item2) {
 			super(item1, item2);
 		}
@@ -34,7 +34,7 @@ public abstract class Binary implements Constraint {
 		}
 	}
 	
-	public class NotEquals extends Binary {
+	public static class NotEquals extends Binary {
 		public NotEquals(String item1, String item2) {
 			super(item1, item2);
 		}
