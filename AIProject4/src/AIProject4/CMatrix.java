@@ -1,13 +1,12 @@
 package AIProject4;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 
 public class CMatrix {
 	
-	HashMap<String, Integer> itemindex;
-	HashMap<String, Integer> bagindex;
-	int[][] constmatrix;
+	Map<String,Map<String,Integer>> matrix;
 	
 	public CMatrix(ArrayList<Item> items, ArrayList<Bag> bags, ArrayList<String> inclusive,
 			ArrayList<String> exclusive){
@@ -31,24 +30,16 @@ public class CMatrix {
 	public void MakeCMatrix(ArrayList<Item> items, ArrayList<Bag> bags, ArrayList<String> inclusive,
 			ArrayList<String> exclusive){
 		// Constraint Matrix will have the dimentions items-by-bags
-		this.constmatrix = new int[items.size()][bags.size()];
+		this.matrix = new HashMap<String,Map<String,Integer>>();
 		// Iterate through matrix to make every cell 1 (default value)
-		for (int x = 0; x < items.size(); x++){
-			for (int y = 0; y < bags.size(); y++){
-				constmatrix[x][y] = 1;
+		// Also initializes hashmaps
+		for (int x = 0; x < bags.size(); x++){
+			this.matrix.put(bags.get(x).letter, new HashMap<String,Integer>());
+			for (int y = 0; y < items.size(); y++){
+				this.matrix.get(bags.get(x).letter).put(items.get(y).letter, 1);
+				
 			}
 		}
-		
-		// Init hashmaps tying a bag or item letter (key) to the index in the matrix (value)
-		this.itemindex = new HashMap<String, Integer>();
-		this.bagindex = new HashMap<String, Integer>();
-		for (int i = 0; i<items.size(); i++){
-			itemindex.put(items.get(i).letter, i);
-		}
-		for (int b = 0; b<bags.size(); b++){
-			System.out.println(bags.get(b).letter + "   "+ b);
-			bagindex.put(bags.get(b).letter, b);
-		}	
 		
 		/* 
 		 * Apply Inclusive constraints. For each constraint, iterate through the bags, then 
@@ -68,7 +59,7 @@ public class CMatrix {
 						foundbag = 1;
 					}
 				}
-				constmatrix[itemindex.get(parts[0])][bagindex.get(bags.get(i).letter)] = foundbag;
+				matrix.get(bags.get(i).letter).put(parts[0], foundbag);
 			}
 		}
 		
@@ -87,15 +78,30 @@ public class CMatrix {
 						foundbag = 0;
 					}
 				}
-				constmatrix[itemindex.get(parts[0])][bagindex.get(bags.get(i).letter)] = foundbag;
+				matrix.get(bags.get(i).letter).put(parts[0], foundbag);
 			}
 		}
 		
-		System.out.println(itemindex);
-		System.out.println(bagindex);
-		//System.out.println(constmatrix);
-		new ArrayPrinter(constmatrix, itemindex, bagindex);
 		
+		
+		printHashMap(matrix);
+	}
+	
+	public void printHashMap(Map<String,Map<String, Integer>> map) {
+		System.out.print("##");
+		for (String bag : map.keySet()) {
+			System.out.print("  " + bag);
+		}
+		System.out.println();
+		
+		for (String item : map.get(map.keySet().toArray()[0]).keySet()) {
+			System.out.print(item + " ");
+			
+			for (String bag : map.keySet()) {
+				System.out.print("  " + map.get(bag).get(item));
+			}
+			System.out.println();
+		}
 	}
 	
 
