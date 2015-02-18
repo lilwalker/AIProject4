@@ -11,8 +11,7 @@ r 50
 ##### - unary inclusive
 C r q
 ##### - unary exclusive
-D p q
+D p
 ##### - binary equals
-C E
 ##### - binary not equals
 ##### - binary simultaneous

@@ -1,7 +1,9 @@
 package AIProject4;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashMap;
+import java.util.PriorityQueue;
 
 public class CSP {
 	
@@ -27,15 +29,13 @@ public class CSP {
 		this.domains = makeDomains();
 	}
 	
-	
-	
 	public void solve(){
 		arcConsistency();
 		System.out.println(domains);
 		Item next = pickMRV();
 		System.out.println(next.letter);
-		Bag nextbag = pickLCV(next);
-		System.out.println(nextbag.letter);
+		ArrayList<Bag> nextbag = LCVList(next);
+		System.out.println(nextbag);
 	}
 
 	/*public void backtrackingSearch(){
@@ -51,7 +51,33 @@ public class CSP {
 		var = pickMRV();
 	}*/
 	
-	
+	public ArrayList<Bag> LCVList(Item item){
+		//PriorityQueue<Bag> lcv = new PriorityQueue<Bag>();
+		//Comparator domainsize = new DomainSizeComp();
+		ArrayList<Bag> lcv = new ArrayList<Bag>();
+		ArrayList<Bag> unassigned = (ArrayList<Bag>) domains.get(item.letter).clone();
+		int currentdomains = totalDomains();
+		while(!unassigned.isEmpty()){
+			Bag mostFlexible = unassigned.get(0);
+			int bestelimdomains = currentdomains;
+			for (Bag bag: unassigned){
+				bag.addItem(item);
+				if (arcConsistency()){
+					int elimdomains = currentdomains - totalDomains();
+					if (elimdomains < bestelimdomains){
+						mostFlexible = bag;
+						bestelimdomains = elimdomains;
+					}
+					
+				}
+				bag.removeItem(item);
+				arcConsistency();
+			}
+			lcv.add(mostFlexible);
+			unassigned.remove(mostFlexible);
+		}
+		return lcv;
+	}
 	
 	public Bag pickLCV(Item item){
 		Bag mostFlexible = domains.get(item.letter).get(0);
