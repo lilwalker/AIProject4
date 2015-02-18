@@ -19,5 +19,18 @@ public class Bag {
 		this.capacity = capacity;
 		this.contents = new ArrayList<Item>();
 	}
+	
+	public void addItem(Item item){
+		this.contents.add(item);
+	}
+	
+	public void removeItem(Item item){
+		for (int i = 0; i < contents.size(); i++){
+			if (contents.get(i).letter.equals(item.letter)){
+				contents.remove(i);
+				return;
+			}
+		}
+	}
 
 }

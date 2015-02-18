@@ -10,8 +10,10 @@ r 50
 ##### - fitting limits
 ##### - unary inclusive
 C r q
+E p
 ##### - unary exclusive
 D p q
 ##### - binary equals
+C E
 ##### - binary not equals
 ##### - binary simultaneous
