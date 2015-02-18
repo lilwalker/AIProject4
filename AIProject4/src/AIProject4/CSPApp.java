@@ -13,6 +13,8 @@ public class CSPApp {
 		constraints = reader.importData();
 		CSP csp = new CSP(constraints);
 		csp.solve();
+		
+		System.out.print(PrintingUtils.genBagOutput(csp.bags));
 
 	}
 
