@@ -12,7 +12,6 @@ r 50
 C r q
 ##### - unary exclusive
 D p q
-E r q
 ##### - binary equals
 C E
 ##### - binary not equals

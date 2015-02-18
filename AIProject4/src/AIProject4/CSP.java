@@ -27,6 +27,77 @@ public class CSP {
 		this.domains = makeDomains();
 	}
 	
+	
+	
+	public void solve(){
+		arcConsistency();
+		System.out.println(domains);
+		Item next = pickMRV();
+		System.out.println(next.letter);
+		Bag nextbag = pickLCV(next);
+		System.out.println(nextbag.letter);
+	}
+
+	/*public void backtrackingSearch(){
+		ArrayList<Item> assigned = new ArrayList<Item>();
+		assigned = items;
+		
+	}
+	
+	public backtrack(ArrayList<Assignment> assignments, ArrayList<Item> unassigned){
+		if (assignments.size()==items.size()){
+			return assignments;
+		}
+		var = pickMRV();
+	}*/
+	
+	
+	
+	public Bag pickLCV(Item item){
+		Bag mostFlexible = domains.get(item.letter).get(0);
+		int currentdomains = totalDomains();
+		int bestelimdomains = currentdomains;
+		for (Bag bag : domains.get(item.letter)){
+			bag.addItem(item);
+			if (arcConsistency()){
+				int elimdomains = currentdomains - totalDomains();
+				System.out.println(elimdomains);
+				if (elimdomains < bestelimdomains){
+					mostFlexible = bag;
+					bestelimdomains = elimdomains;
+				}
+			}
+			bag.removeItem(item);
+			arcConsistency();
+		}
+		return mostFlexible;
+	}
+	
+	private int totalDomains() {
+		int total = 0;
+		for (String key : domains.keySet()){
+			total += domains.get(key).size();
+		}
+		return total;
+	}
+
+	public Item pickMRV(){
+		
+		int minremaining = domains.get(items.get(0).letter).size();
+		Item currentpick = items.get(0);
+		
+		for (Item item : items){
+			if (domains.get(item.letter).size() < minremaining){
+				minremaining = domains.get(item.letter).size();
+				currentpick = item;
+			}
+		}
+		
+		return currentpick;
+		
+	}
+	
+	
 	public Boolean arcConsistency(){
 		for (int i = 0; i < items.size()-1; i++){
 			for (int j = i+1; j<items.size(); j++){

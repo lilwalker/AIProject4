@@ -96,6 +96,14 @@ public class Constraints {
 			if (!constr.satisfies(state))
 				return false;
 		}
+		for (Bag bag : state.getBags()){
+			int currentweight = 0;
+			for (Item item : bag.contents){
+				currentweight += item.weight;
+			}
+			if (currentweight > bag.capacity)
+				return false;
+		}
 		return true;
 	}
 
