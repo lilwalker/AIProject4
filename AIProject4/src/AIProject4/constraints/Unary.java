@@ -8,7 +8,7 @@ import AIProject4.Bag;
 import AIProject4.Item;
 import AIProject4.State;
 
-public abstract class UnaryConstraint implements Constraint {
+public abstract class Unary implements Constraint {
 	public abstract boolean itemAllowedInBag(String item, String bag);
 	
 	public boolean satisfies(State state) {
@@ -32,13 +32,13 @@ public abstract class UnaryConstraint implements Constraint {
 	}
 
 	protected Set<String> bags;
-	protected UnaryConstraint(String item, List<String> bags) {
+	protected Unary(String item, List<String> bags) {
 		this.item = item;
 		this.bags = new HashSet<String>();
 		this.bags.addAll(bags);
 	}
 	
-	public class Inclusive extends UnaryConstraint {
+	public class Inclusive extends Unary {
 		public Inclusive(String bag, List<String> items) {
 			super(bag,items);
 		}
@@ -51,7 +51,7 @@ public abstract class UnaryConstraint implements Constraint {
 		}
 	}
 	
-	public class Exclusive extends UnaryConstraint {
+	public class Exclusive extends Unary {
 		public Exclusive(String bag, List<String> items) {
 			super(bag,items);
 		}

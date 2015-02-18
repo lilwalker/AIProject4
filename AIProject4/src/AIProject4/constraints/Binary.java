@@ -1,23 +1,20 @@
 package AIProject4.constraints;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import AIProject4.Bag;
 import AIProject4.Item;
 import AIProject4.State;
 
-public abstract class BinaryConstraint implements Constraint {
+public abstract class Binary implements Constraint {
 
 	String item1;
 	String item2;
 	
-	public BinaryConstraint(String item1, String item2) {
+	public Binary(String item1, String item2) {
 		this.item1 = item1;
 		this.item2 = item2;
 	}
 	
-	public class Equals extends BinaryConstraint {
+	public class Equals extends Binary {
 		public Equals(String item1, String item2) {
 			super(item1, item2);
 		}
@@ -37,7 +34,7 @@ public abstract class BinaryConstraint implements Constraint {
 		}
 	}
 	
-	public class NotEquals extends BinaryConstraint {
+	public class NotEquals extends Binary {
 		public NotEquals(String item1, String item2) {
 			super(item1, item2);
 		}

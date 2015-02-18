@@ -19,12 +19,20 @@ public class MutEx implements Constraint {
 		boolean mutex1 = false;
 		boolean mutex2 = false;
 		for (Bag bag : state.getBags()) {
-			for (Item item : bag.contents) {
-				if (bag.letter.equals(bag1) && item.letter.equals(item1)) {
-					mutex1 = true;
+			if (bag.letter.equals(bag1)) {
+				for (Item item : bag.contents) {
+					if (item.letter.equals(item1)) {
+						mutex1 = true;
+						break;
+					}
 				}
-				if (bag.letter.equals(bag2) && item.letter.equals(item2)) {
-					mutex2 = true;
+			}
+			if (bag.letter.equals(bag2)) {
+				for (Item item: bag.contents) {
+					if (item.letter.equals(item2)) {
+						mutex2 = true;
+						break;
+					}
 				}
 			}
 		}
