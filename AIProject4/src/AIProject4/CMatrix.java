@@ -59,7 +59,10 @@ public class CMatrix {
 						foundbag = 1;
 					}
 				}
-				matrix.get(bags.get(i).letter).put(parts[0], foundbag);
+				// Since we are ruling out, we should only be setting 0s;
+				if (foundbag == 0) {
+					matrix.get(bags.get(i).letter).put(parts[0], foundbag);
+				}
 			}
 		}
 		
@@ -78,7 +81,10 @@ public class CMatrix {
 						foundbag = 0;
 					}
 				}
-				matrix.get(bags.get(i).letter).put(parts[0], foundbag);
+				// Since we are ruling out, we should only be setting zeros
+				if (foundbag == 0) {
+					matrix.get(bags.get(i).letter).put(parts[0], foundbag);
+				}
 			}
 		}
 		
