@@ -65,12 +65,12 @@ public class Constraints {
 
 	public void addUnaryInc(String string) {
 		String[] parts = string.split(" ");
-		this.constraints.add(new Unary.Inclusive(parts[0], Arrays.asList(parts).subList(1, parts.length - 1)));
+		this.constraints.add(new Unary.Inclusive(parts[0], Arrays.asList(parts).subList(1, parts.length)));
 	}
 	
 	public void addUnaryEx(String string) {
 		String[] parts = string.split(" ");
-		this.constraints.add(new Unary.Exclusive(parts[0], Arrays.asList(parts).subList(1, parts.length - 1)));
+		this.constraints.add(new Unary.Exclusive(parts[0], Arrays.asList(parts).subList(1, parts.length)));
 	}
 	
 	public void addBinaryEq(String string) {

@@ -36,7 +36,6 @@ public class CSP {
 		
 		while (!arcs.isEmpty()){
 			Arc currentarc = arcs.remove(0);
-			ArrayList<Bag> domain = bags;
 			if (revise(currentarc)){
 				if (domains.get(currentarc.item1.letter).isEmpty()){
 					return false;
@@ -44,6 +43,7 @@ public class CSP {
 				arcs.addAll(constraints.getNeighbors(currentarc.item1));
 			}
 		}
+		System.out.println(domains);
 		return true;
 	}
 
@@ -68,6 +68,12 @@ public class CSP {
 							domains.get(currentarc.item1.letter).remove(j);
 					}
 					revised = true;
+				}
+			}
+			if (!constraints.satisfiesAll(statea)){
+				for (int j = 0; j < domains.get(currentarc.item1.letter).size(); j++){
+					if (domains.get(currentarc.item1.letter).get(j).letter.equals(bags.get(i).letter))
+						domains.get(currentarc.item1.letter).remove(j);
 				}
 			}
 			bags.get(i).removeItem(currentarc.item1);

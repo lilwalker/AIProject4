@@ -8,7 +8,8 @@ q 15
 ##### - unary inclusive
 C p
 ##### - unary exclusive
-C q
+D p
 ##### - binary equals
+C D
 ##### - binary not equals
 ##### - binary simultaneous

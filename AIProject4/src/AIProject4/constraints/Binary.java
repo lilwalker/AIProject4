@@ -23,16 +23,21 @@ public abstract class Binary implements Constraint {
 
 		@Override
 		public boolean satisfies(State state) {
+			ArrayList<String> assigned = new ArrayList<String>();
+			int satisfied = 0;
 			for (Bag bag : state.getBags()) {
 				boolean citem1 = false;
 				boolean citem2 = false;
 				for (Item item : bag.contents) {
+					assigned.add(item.letter);
 					if (item.letter.equals(item1)) citem1 = true;
 					if (item.letter.equals(item2)) citem2 = true;
 				}
-				if (citem1 ^ citem2) return false;
+				if (citem1 && citem2) satisfied = 1;
 			}
-			return true;
+			if (!(assigned.contains(item1) && assigned.contains(item2))) return true;
+			if (satisfied==1) return true;
+			return false;
 		}
 		
 	}
