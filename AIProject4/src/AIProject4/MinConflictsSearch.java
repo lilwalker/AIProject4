@@ -26,12 +26,14 @@ public class MinConflictsSearch {
 		this.assignments = new HashMap<Item,Bag>();
 		Bag defaultBag = this.values.iterator().next();
 		for (Item item : this.variables) {
-			assignItem(defaultBag, item);
+			this.assignments.put(item,defaultBag);
 		}
+		genState();
 	}
 	
 	private void assignItem(Bag b, Item i) {
 		this.assignments.put(i,b);
+		genState();
 	}
 	
 	private State genState() {
@@ -79,11 +81,11 @@ public class MinConflictsSearch {
 			Item item = this.conflicts.get(r.nextInt(this.conflicts.size())); // Grab random item
 			
 			Bag bestBag = this.assignments.get(item);
+			
 			int minConflicts = numConflicts(item);
 			
 			for (Bag bag : values) {
 				assignItem(bag, item);
-				
 				int con = numConflicts(item);
 				if ((con < minConflicts) || ((con == minConflicts) && (r.nextDouble() > 0.5d))) { // randomly break ties
 					minConflicts = con;

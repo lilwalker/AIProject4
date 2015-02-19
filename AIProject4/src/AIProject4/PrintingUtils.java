@@ -4,7 +4,11 @@ import java.util.Collection;
 
 public class PrintingUtils {
 	public static String genBagOutput(Collection<Bag> bags) {
-		if (bags.size() == 0) {
+		int i = 0;
+		for (Bag bag : bags) {
+			i+= bag.contents.size();
+		}
+		if (i == 0) {
 			return "No solution Found\n\n";
 		}
 		

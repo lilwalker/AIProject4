@@ -18,7 +18,7 @@ public class CSPApp {
 		
 		System.out.println("######### MIN CONFLICTS ##########");
 		MinConflictsSearch mcs = new MinConflictsSearch(constraints.constraints, constraints.items, constraints.bags);
-		PrintingUtils.printBags(mcs.search(1000).getBags());
+		PrintingUtils.printBags(mcs.search(10000).getBags());
 
 	}
 
