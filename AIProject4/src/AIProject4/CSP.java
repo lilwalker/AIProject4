@@ -42,7 +42,8 @@ public class CSP {
 	
 	public ArrayList<Bag> solve(){
 		arcConsistency();
-		backtrackingSearch();
+		ArrayList<Assignment> assigns = backtrackingSearch();
+		new ArrayPrinter(assigns);
 		return bags;
 	}
 
@@ -53,7 +54,7 @@ public class CSP {
 	}
 	
 	public ArrayList<Assignment> backtrack(ArrayList<Assignment> assignments){
-		if (assignments.size()==items.size()){//every assignment is made
+		if (unassigned.isEmpty()){//every assignment is made
 			return assignments;
 		}
 		Item var = pickMRV(assignments);
@@ -72,12 +73,23 @@ public class CSP {
 					return result;
 			}
 			bag.removeItem(var);
+			unassigned.add(var);
 			log.printRemoved(new Assignment(var, bag));
-			//arcConsistency();
+			assignments = removeAssignment(assignments, new Assignment(var, bag));
 		}
 		return new ArrayList<Assignment>();
 	}
 	
+	private ArrayList<Assignment> removeAssignment(ArrayList<Assignment> assignments, Assignment assignment) {
+		for (int a = 0; a < assignments.size(); a++){
+			if (assignments.get(a).item.letter.equals(assignment.item.letter)){
+				assignments.remove(a);
+				return assignments;
+			}
+		}
+		return assignments;
+	}
+
 	public ArrayList<Bag> LCVList(Item item){
 		ArrayList<Bag> lcv = new ArrayList<Bag>();
 		ArrayList<Bag> unassigned = (ArrayList<Bag>) bags.clone();
