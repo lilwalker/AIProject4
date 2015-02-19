@@ -25,4 +25,8 @@ public class PrintingUtils {
 		
 		return sb.toString();
 	}
+	
+	public static void printBags(Collection<Bag> bags) {
+		System.out.print(genBagOutput(bags));
+	}
 }

@@ -1,7 +1,9 @@
 package AIProject4.constraints;
 
 import java.util.ArrayList;
+import java.util.Collection;
 
+import AIProject4.Assignment;
 import AIProject4.Bag;
 import AIProject4.Item;
 import AIProject4.State;
