@@ -4,6 +4,7 @@
 AIProject4/ contains an eclipse Java project with the source
 sample_outputs/ contains sample outputs on input6.txt for all 4 CSP methods implemented
 lgwalker_kkumykov_csp.jar is a precompiled binary, compiled in java18
+Report.docx - the report
 
 ###########
 # RUNNING #
