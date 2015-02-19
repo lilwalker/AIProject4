@@ -1,5 +1,6 @@
 package AIProject4;
 
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
@@ -120,7 +121,7 @@ public class MinConflictsSearch {
 	 * @param max
 	 * @return
 	 */
-	public State search(int max) {
+	public State search(int max, PrintStream out) {
 		int i = 0;
 		
 		while (i < max) {
@@ -130,10 +131,10 @@ public class MinConflictsSearch {
 			
 			if (conflicts.size() == 0) {
 				if (stateCorrect()) {
-					System.out.println("MinConflicts found after " + i);
+					out.println("MinConflicts found after " + i);
 					return genState();
 				} else {
-					System.out.println("MinConflicts has no variable conflicts, but the state isn't correct. Probably no solution.");
+					out.println("MinConflicts has no variable conflicts, but the state isn't correct. Probably no solution.");
 					return null;
 				}
 			}
