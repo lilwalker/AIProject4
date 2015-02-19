@@ -6,7 +6,7 @@ public class CSPApp {
 
 	public static void main(String[] args) throws IOException {
 		
-		Reader reader = new Reader("samples/input6.txt");
+		Reader reader = new Reader("samples/input4.txt");
 		Constraints constraints = new Constraints(); 
 		constraints = reader.importData();
 		CSP csp = new CSP(constraints, false, false);
