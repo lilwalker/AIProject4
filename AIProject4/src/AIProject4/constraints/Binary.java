@@ -40,6 +40,7 @@ public abstract class Binary implements Constraint {
 			return false;
 		}
 		
+		
 	}
 	
 	public static class NotEquals extends Binary {

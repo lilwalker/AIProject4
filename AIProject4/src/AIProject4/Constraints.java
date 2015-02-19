@@ -128,6 +128,21 @@ public class Constraints {
 		}
 		return arcs;
 	}
+	
+	public int constrainsBTW(Item item, ArrayList<Item> unassigned){
+		int score = 0;
+		for (Item unassign:unassigned){
+			for (Binary bin:binaryconstraints){
+				if (bin.getItem1().equals(item.letter)||bin.getItem2().equals(item.letter))
+					score++;
+			}
+			for (MutEx mut: mutexconstraints){
+				if (mut.getItem1().equals(item.letter)||mut.getItem2().equals(item.letter))
+					score++;
+			}
+		}
+		return score;
+	}
 
 	private Item getItem(String item1) {
 		for (Item item: items){
