@@ -13,7 +13,7 @@ public class CSPApp {
 			System.out.println("Usage: java -jar name_of_jar.jar <input file> [num]");
 			System.out.println("num: 0 = Just Backtracking");
 			System.out.println("     1 = BT + Heuristic");
-			System.out.println("     2 = BT + H + FC");
+			System.out.println("     2 = BT + H + FC (default)");
 			System.out.println("     3 = MinConflicts");
 			System.exit(1);
 		}
