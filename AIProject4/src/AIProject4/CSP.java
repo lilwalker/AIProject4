@@ -12,9 +12,11 @@ public class CSP {
 	Constraints constraints;
 	ArrayList<Arc> arcs;
 	HashMap<String, ArrayList<Bag>> domains;
+	HashMap<String, ArrayList<Bag>> arcdomains;
 	LogPrinting log;
 	Boolean heuristicson;
 	Boolean forwardcheckingon;
+	int trys;
 	
 	CSP(ArrayList<Item> items, ArrayList<Bag> bags, Constraints constraints, PrintStream out){
 		this.items = items;
@@ -32,16 +34,19 @@ public class CSP {
 		this.constraints = constraints;
 		this.arcs = new ArrayList<Arc>();
 		this.domains = makeDomains();
+		this.arcdomains = makeDomains();
 		this.unassigned = (ArrayList<Item>) items.clone();
 		this.log = new LogPrinting(out);
 		this.heuristicson = heuristics;
 		this.forwardcheckingon = FC;
 		log.printOptions(heuristicson, forwardcheckingon);
+		int trys = 0;
 	}
 	
 	public ArrayList<Bag> solve(){
-		arcConsistency();
+		//arcConsistency();
 		backtrackingSearch();
+		//System.out.println("Conflict Checks: "+trys);
 		return bags;
 	}
 
@@ -62,13 +67,29 @@ public class CSP {
 			log.printTry(bag);
 			removeAssignedItem(var);
 			State statea = new State(bags, items);
-			if (constraints.satisfiesAll(statea)){
-				Assignment assign = new Assignment(var, bag);
-				assignments.add(assign);
-				log.printAdd(assign);
-				ArrayList<Assignment> result = backtrack(assignments);
-				if (!result.isEmpty())
-					return result;
+			if (forwardcheckingon){
+				if(arcConsistency()){
+					trys++;
+					if (constraints.satisfiesAll(statea)){
+						Assignment assign = new Assignment(var, bag);
+						assignments.add(assign);
+						log.printAdd(assign);
+						ArrayList<Assignment> result = backtrack(assignments);
+						if (!result.isEmpty())
+							return result;
+					}
+				}
+			}
+			else{
+				trys++;
+				if (constraints.satisfiesAll(statea)){
+					Assignment assign = new Assignment(var, bag);
+					assignments.add(assign);
+					log.printAdd(assign);
+					ArrayList<Assignment> result = backtrack(assignments);
+					if (!result.isEmpty())
+						return result;
+				}
 			}
 			bag.removeItem(var);
 			unassigned.add(var);
@@ -125,8 +146,8 @@ public class CSP {
 		
 		
 		if (heuristicson){
-			if (forwardcheckingon)
-				arcConsistency();
+			/*if (forwardcheckingon)
+				arcConsistency();*/
 			for (Item item : unassigned){
 				if (domains.get(item.letter).size() == minremaining){
 					minremaining = domains.get(item.letter).size();
@@ -162,7 +183,7 @@ public class CSP {
 		while (!arcs.isEmpty()){
 			Arc currentarc = arcs.remove(0);
 			if (revise(currentarc)){
-				if (domains.get(currentarc.item1.letter).isEmpty()){
+				if (arcdomains.get(currentarc.item1.letter).isEmpty()){
 					return false;
 				}
 				arcs.addAll(constraints.getNeighbors(currentarc.item1));
@@ -187,17 +208,17 @@ public class CSP {
 					bag.removeItem(currentarc.item2);
 				}
 				if (remove){
-					for (int j = 0; j < domains.get(currentarc.item1.letter).size(); j++){
-						if (domains.get(currentarc.item1.letter).get(j).letter.equals(bags.get(i).letter))
-							domains.get(currentarc.item1.letter).remove(j);
+					for (int j = 0; j < arcdomains.get(currentarc.item1.letter).size(); j++){
+						if (arcdomains.get(currentarc.item1.letter).get(j).letter.equals(bags.get(i).letter))
+							arcdomains.get(currentarc.item1.letter).remove(j);
 					}
 					revised = true;
 				}
 			}
 			if (!constraints.satisfiesAll(statea)){
-				for (int j = 0; j < domains.get(currentarc.item1.letter).size(); j++){
-					if (domains.get(currentarc.item1.letter).get(j).letter.equals(bags.get(i).letter))
-						domains.get(currentarc.item1.letter).remove(j);
+				for (int j = 0; j < arcdomains.get(currentarc.item1.letter).size(); j++){
+					if (arcdomains.get(currentarc.item1.letter).get(j).letter.equals(bags.get(i).letter))
+						arcdomains.get(currentarc.item1.letter).remove(j);
 				}
 			}
 			bags.get(i).removeItem(currentarc.item1);
