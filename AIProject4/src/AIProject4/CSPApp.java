@@ -6,10 +6,10 @@ public class CSPApp {
 
 	public static void main(String[] args) throws IOException {
 		
-		Reader reader = new Reader("samples/input4.txt");
+		Reader reader = new Reader("samples/input5.txt");
 		Constraints constraints = new Constraints(); 
 		constraints = reader.importData();
-		CSP csp = new CSP(constraints, true, false);
+		CSP csp = new CSP(constraints, true, true);
 		csp.solve();
 		
 		System.out.print(PrintingUtils.genBagOutput(csp.bags));
