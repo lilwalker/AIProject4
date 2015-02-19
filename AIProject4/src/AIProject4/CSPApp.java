@@ -6,7 +6,7 @@ public class CSPApp {
 
 	public static void main(String[] args) throws IOException {
 		
-		Reader reader = new Reader("samples/input6.txt");
+		Reader reader = new Reader("samples/input4.txt");
 		Constraints constraints = new Constraints(); 
 		constraints = reader.importData();
 		CSP csp = new CSP(constraints, false, false);
@@ -16,10 +16,10 @@ public class CSPApp {
 		
 		System.out.println("######### MIN CONFLICTS ##########");
 		MinConflictsSearch mcs = new MinConflictsSearch(constraints.constraints, constraints.items, constraints.bags);
-		State result = mcs.search(50000);
+		State result = mcs.search(5000);
 		
 		if (result == null) {
-			System.out.println("Min Conflicts reached try limit and gave up, try again?");
+			System.out.println("Min Conflicts reached try limit and gave up. Perhaps it hit a local minima? Try again?");
 		} else {
 			PrintingUtils.printBags(result.getBags());
 		}
