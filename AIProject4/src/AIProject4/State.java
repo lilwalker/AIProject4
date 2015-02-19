@@ -5,15 +5,17 @@ import java.util.List;
 public class State {
 	private List<Bag> bags;
 	private List<Item> items;
+	private List<Item> unassigned;
 	public Object getItems;
 	
 	State(List<Bag> bags){
 		this.bags = bags;
 	}
 	
-	State(List<Bag> bags, List<Item> items){
+	State(List<Bag> bags, List<Item> items, List<Item> unassigned){
 		this.bags = bags;
 		this.items = items;
+		this.unassigned = unassigned;
 	}
 
 	public List<Bag> getBags() {
