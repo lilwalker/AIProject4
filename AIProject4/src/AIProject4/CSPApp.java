@@ -9,6 +9,19 @@ import java.util.Date;
 public class CSPApp {
 
 	public static void main(String[] args) throws IOException {
+		if (args.length != 1) {
+			System.out.println("Usage: java -jar name_of_jar.jar <input file>");
+			System.exit(1);
+		}
+		
+		if (!new File(args[0]).isFile()) {
+			System.out.println(args[0] + " is not a file!");
+			System.exit(1);
+		}
+		
+		
+		
+		
 		SimpleDateFormat dt = new SimpleDateFormat("yyyyMMddHHmmss");
 		File logFile = new File("log_file_" + dt.format(new Date()));
 		File outFile = new File("output_" + dt.format(new Date()));
@@ -18,7 +31,7 @@ public class CSPApp {
 		PrintStream out = new PrintStream(outFile);
 		PrintStream lmc = new PrintStream(logFileMinConflicts);
 		
-		Reader reader = new Reader("samples/input6.txt");
+		Reader reader = new Reader(args[0]);
 		Constraints constraints = new Constraints(); 
 		constraints = reader.importData();
 		CSP csp = new CSP(constraints, true, true, log);
