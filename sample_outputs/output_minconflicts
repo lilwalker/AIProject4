@@ -1,0 +1,22 @@
+######### MIN CONFLICTS ##########
+MinConflicts found after 65
+p J K L
+number of items: 3
+total weight: 32
+wasted capacity: 0
+
+q C D G
+number of items: 3
+total weight: 24
+wasted capacity: 1
+
+r H I
+number of items: 2
+total weight: 19
+wasted capacity: 1
+
+x E F
+number of items: 2
+total weight: 13
+wasted capacity: 1
+
