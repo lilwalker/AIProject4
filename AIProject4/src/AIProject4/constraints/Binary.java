@@ -38,7 +38,7 @@ public abstract class Binary implements Constraint {
 				}
 				if (citem1 ^ citem2) satisfied = 1;
 			}
-			if (!(assigned.contains(item1) || !assigned.contains(item2))) return true;
+			if (!assigned.contains(item1) || !assigned.contains(item2)) return true;
 			if (satisfied==1) return true;
 			return false;
 		}
