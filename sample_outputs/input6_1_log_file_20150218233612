@@ -1,0 +1,3957 @@
+Heuristics: true, Forward Checking: false
+Trying variable: I
+Trying value: p
+Added <variable, value>: I, p
+Trying variable: H
+Trying value: p
+Removed <variable, value>: H, p
+Trying value: q
+Added <variable, value>: H, q
+Trying variable: L
+Trying value: p
+Added <variable, value>: L, p
+Trying variable: K
+Trying value: p
+Added <variable, value>: K, p
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Added <variable, value>: J, r
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Added <variable, value>: F, r
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, r
+Trying value: x
+Added <variable, value>: F, x
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Added <variable, value>: J, r
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, p
+Trying value: q
+Added <variable, value>: K, q
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Added <variable, value>: J, r
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Added <variable, value>: F, r
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, r
+Trying value: x
+Added <variable, value>: F, x
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Added <variable, value>: J, r
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, q
+Trying value: r
+Removed <variable, value>: K, r
+Trying value: x
+Removed <variable, value>: K, x
+Removed <variable, value>: L, p
+Trying value: q
+Added <variable, value>: L, q
+Trying variable: K
+Trying value: p
+Added <variable, value>: K, p
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Added <variable, value>: J, r
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Added <variable, value>: F, r
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, r
+Trying value: x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, p
+Trying value: q
+Added <variable, value>: K, q
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Added <variable, value>: J, r
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Added <variable, value>: F, r
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, r
+Trying value: x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, q
+Trying value: r
+Removed <variable, value>: K, r
+Trying value: x
+Removed <variable, value>: K, x
+Removed <variable, value>: L, q
+Trying value: r
+Added <variable, value>: L, r
+Trying variable: K
+Trying value: p
+Added <variable, value>: K, p
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Added <variable, value>: F, r
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, r
+Trying value: x
+Added <variable, value>: F, x
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, p
+Trying value: q
+Added <variable, value>: K, q
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Added <variable, value>: F, r
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, r
+Trying value: x
+Added <variable, value>: F, x
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, q
+Trying value: r
+Removed <variable, value>: K, r
+Trying value: x
+Removed <variable, value>: K, x
+Removed <variable, value>: L, r
+Trying value: x
+Added <variable, value>: L, x
+Trying variable: K
+Trying value: p
+Added <variable, value>: K, p
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Added <variable, value>: J, r
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Added <variable, value>: F, r
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, r
+Trying value: x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, p
+Trying value: q
+Added <variable, value>: K, q
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Added <variable, value>: J, r
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Added <variable, value>: F, r
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, r
+Trying value: x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, q
+Trying value: r
+Removed <variable, value>: K, r
+Trying value: x
+Removed <variable, value>: K, x
+Removed <variable, value>: L, x
+Removed <variable, value>: H, q
+Trying value: r
+Added <variable, value>: H, r
+Trying variable: L
+Trying value: p
+Added <variable, value>: L, p
+Trying variable: K
+Trying value: p
+Added <variable, value>: K, p
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Added <variable, value>: J, q
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Removed <variable, value>: F, r
+Trying value: x
+Added <variable, value>: F, x
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Added <variable, value>: J, q
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, p
+Trying value: q
+Added <variable, value>: K, q
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Added <variable, value>: J, q
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Removed <variable, value>: F, r
+Trying value: x
+Added <variable, value>: F, x
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Added <variable, value>: J, q
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, q
+Trying value: r
+Removed <variable, value>: K, r
+Trying value: x
+Removed <variable, value>: K, x
+Removed <variable, value>: L, p
+Trying value: q
+Added <variable, value>: L, q
+Trying variable: K
+Trying value: p
+Added <variable, value>: K, p
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Removed <variable, value>: F, r
+Trying value: x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, p
+Trying value: q
+Added <variable, value>: K, q
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Removed <variable, value>: F, r
+Trying value: x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, q
+Trying value: r
+Removed <variable, value>: K, r
+Trying value: x
+Removed <variable, value>: K, x
+Removed <variable, value>: L, q
+Trying value: r
+Removed <variable, value>: L, r
+Trying value: x
+Added <variable, value>: L, x
+Trying variable: K
+Trying value: p
+Added <variable, value>: K, p
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Added <variable, value>: J, q
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Removed <variable, value>: F, r
+Trying value: x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, p
+Trying value: q
+Added <variable, value>: K, q
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Added <variable, value>: J, q
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Removed <variable, value>: F, r
+Trying value: x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, q
+Trying value: r
+Removed <variable, value>: K, r
+Trying value: x
+Removed <variable, value>: K, x
+Removed <variable, value>: L, x
+Removed <variable, value>: H, r
+Trying value: x
+Added <variable, value>: H, x
+Trying variable: L
+Trying value: p
+Added <variable, value>: L, p
+Trying variable: K
+Trying value: p
+Added <variable, value>: K, p
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Added <variable, value>: J, q
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, q
+Trying value: r
+Added <variable, value>: J, r
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Added <variable, value>: F, r
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Added <variable, value>: J, q
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, r
+Trying value: x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, p
+Trying value: q
+Added <variable, value>: K, q
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Added <variable, value>: J, q
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, q
+Trying value: r
+Added <variable, value>: J, r
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Added <variable, value>: F, r
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Added <variable, value>: J, q
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, r
+Trying value: x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, q
+Trying value: r
+Removed <variable, value>: K, r
+Trying value: x
+Removed <variable, value>: K, x
+Removed <variable, value>: L, p
+Trying value: q
+Added <variable, value>: L, q
+Trying variable: K
+Trying value: p
+Added <variable, value>: K, p
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Added <variable, value>: J, r
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Added <variable, value>: F, r
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, r
+Trying value: x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, p
+Trying value: q
+Added <variable, value>: K, q
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Added <variable, value>: J, r
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Added <variable, value>: F, r
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, r
+Trying value: x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, q
+Trying value: r
+Removed <variable, value>: K, r
+Trying value: x
+Removed <variable, value>: K, x
+Removed <variable, value>: L, q
+Trying value: r
+Added <variable, value>: L, r
+Trying variable: K
+Trying value: p
+Added <variable, value>: K, p
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Added <variable, value>: J, q
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Added <variable, value>: F, r
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Added <variable, value>: J, q
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, r
+Trying value: x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, p
+Trying value: q
+Added <variable, value>: K, q
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Added <variable, value>: J, q
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Added <variable, value>: F, r
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Added <variable, value>: J, q
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, r
+Trying value: x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, q
+Trying value: r
+Removed <variable, value>: K, r
+Trying value: x
+Removed <variable, value>: K, x
+Removed <variable, value>: L, r
+Trying value: x
+Removed <variable, value>: L, x
+Removed <variable, value>: H, x
+Removed <variable, value>: I, p
+Trying value: q
+Added <variable, value>: I, q
+Trying variable: H
+Trying value: p
+Removed <variable, value>: H, p
+Trying value: q
+Added <variable, value>: H, q
+Trying variable: L
+Trying value: p
+Added <variable, value>: L, p
+Trying variable: K
+Trying value: p
+Added <variable, value>: K, p
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Added <variable, value>: J, r
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Added <variable, value>: F, r
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, r
+Trying value: x
+Added <variable, value>: F, x
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Added <variable, value>: J, r
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, p
+Trying value: q
+Added <variable, value>: K, q
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Added <variable, value>: J, r
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Added <variable, value>: F, r
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, r
+Trying value: x
+Added <variable, value>: F, x
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Added <variable, value>: J, r
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, q
+Trying value: r
+Removed <variable, value>: K, r
+Trying value: x
+Removed <variable, value>: K, x
+Removed <variable, value>: L, p
+Trying value: q
+Removed <variable, value>: L, q
+Trying value: r
+Added <variable, value>: L, r
+Trying variable: K
+Trying value: p
+Added <variable, value>: K, p
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Added <variable, value>: F, r
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, r
+Trying value: x
+Added <variable, value>: F, x
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, p
+Trying value: q
+Added <variable, value>: K, q
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Added <variable, value>: F, r
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, r
+Trying value: x
+Added <variable, value>: F, x
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, q
+Trying value: r
+Removed <variable, value>: K, r
+Trying value: x
+Removed <variable, value>: K, x
+Removed <variable, value>: L, r
+Trying value: x
+Added <variable, value>: L, x
+Trying variable: K
+Trying value: p
+Added <variable, value>: K, p
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Added <variable, value>: J, r
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Added <variable, value>: F, r
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, r
+Trying value: x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, p
+Trying value: q
+Added <variable, value>: K, q
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Added <variable, value>: J, r
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Added <variable, value>: F, r
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, r
+Trying value: x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, q
+Trying value: r
+Removed <variable, value>: K, r
+Trying value: x
+Removed <variable, value>: K, x
+Removed <variable, value>: L, x
+Removed <variable, value>: H, q
+Trying value: r
+Removed <variable, value>: H, r
+Trying value: x
+Added <variable, value>: H, x
+Trying variable: L
+Trying value: p
+Added <variable, value>: L, p
+Trying variable: K
+Trying value: p
+Added <variable, value>: K, p
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Added <variable, value>: J, r
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Added <variable, value>: F, r
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, r
+Trying value: x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, p
+Trying value: q
+Added <variable, value>: K, q
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Added <variable, value>: J, r
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Added <variable, value>: F, r
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, r
+Trying value: x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, q
+Trying value: r
+Removed <variable, value>: K, r
+Trying value: x
+Removed <variable, value>: K, x
+Removed <variable, value>: L, p
+Trying value: q
+Added <variable, value>: L, q
+Trying variable: K
+Trying value: p
+Added <variable, value>: K, p
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Added <variable, value>: J, r
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Added <variable, value>: F, r
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, r
+Trying value: x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, p
+Trying value: q
+Added <variable, value>: K, q
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Added <variable, value>: J, r
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Added <variable, value>: F, r
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, r
+Trying value: x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, q
+Trying value: r
+Removed <variable, value>: K, r
+Trying value: x
+Removed <variable, value>: K, x
+Removed <variable, value>: L, q
+Trying value: r
+Added <variable, value>: L, r
+Trying variable: K
+Trying value: p
+Added <variable, value>: K, p
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Added <variable, value>: F, r
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, r
+Trying value: x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, p
+Trying value: q
+Added <variable, value>: K, q
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Added <variable, value>: F, r
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, r
+Trying value: x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, q
+Trying value: r
+Removed <variable, value>: K, r
+Trying value: x
+Removed <variable, value>: K, x
+Removed <variable, value>: L, r
+Trying value: x
+Removed <variable, value>: L, x
+Removed <variable, value>: H, x
+Removed <variable, value>: I, q
+Trying value: r
+Added <variable, value>: I, r
+Trying variable: H
+Trying value: p
+Removed <variable, value>: H, p
+Trying value: q
+Added <variable, value>: H, q
+Trying variable: L
+Trying value: p
+Added <variable, value>: L, p
+Trying variable: K
+Trying value: p
+Added <variable, value>: K, p
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Added <variable, value>: F, r
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, r
+Trying value: x
+Added <variable, value>: F, x
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, p
+Trying value: q
+Added <variable, value>: K, q
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Added <variable, value>: F, r
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, r
+Trying value: x
+Added <variable, value>: F, x
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, q
+Trying value: r
+Removed <variable, value>: K, r
+Trying value: x
+Removed <variable, value>: K, x
+Removed <variable, value>: L, p
+Trying value: q
+Added <variable, value>: L, q
+Trying variable: K
+Trying value: p
+Added <variable, value>: K, p
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Added <variable, value>: F, r
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, r
+Trying value: x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, p
+Trying value: q
+Added <variable, value>: K, q
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Added <variable, value>: F, r
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, r
+Trying value: x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, q
+Trying value: r
+Removed <variable, value>: K, r
+Trying value: x
+Removed <variable, value>: K, x
+Removed <variable, value>: L, q
+Trying value: r
+Added <variable, value>: L, r
+Trying variable: K
+Trying value: p
+Added <variable, value>: K, p
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Removed <variable, value>: F, r
+Trying value: x
+Added <variable, value>: F, x
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, p
+Trying value: q
+Added <variable, value>: K, q
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Removed <variable, value>: F, r
+Trying value: x
+Added <variable, value>: F, x
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, q
+Trying value: r
+Removed <variable, value>: K, r
+Trying value: x
+Removed <variable, value>: K, x
+Removed <variable, value>: L, r
+Trying value: x
+Added <variable, value>: L, x
+Trying variable: K
+Trying value: p
+Added <variable, value>: K, p
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Added <variable, value>: F, r
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, r
+Trying value: x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, p
+Trying value: q
+Added <variable, value>: K, q
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Added <variable, value>: F, r
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, p
+Trying value: q
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, r
+Trying value: x
+Removed <variable, value>: F, x
+Removed <variable, value>: K, q
+Trying value: r
+Removed <variable, value>: K, r
+Trying value: x
+Removed <variable, value>: K, x
+Removed <variable, value>: L, x
+Removed <variable, value>: H, q
+Trying value: r
+Added <variable, value>: H, r
+Trying variable: L
+Trying value: p
+Added <variable, value>: L, p
+Trying variable: K
+Trying value: p
+Added <variable, value>: K, p
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Added <variable, value>: J, q
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Removed <variable, value>: G, q
+Trying value: r
+Removed <variable, value>: G, r
+Trying value: x
+Removed <variable, value>: G, x
+Removed <variable, value>: E, x
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: D, q
+Trying value: r
+Removed <variable, value>: D, r
+Trying value: x
+Removed <variable, value>: D, x
+Removed <variable, value>: F, p
+Trying value: q
+Removed <variable, value>: F, q
+Trying value: r
+Removed <variable, value>: F, r
+Trying value: x
+Added <variable, value>: F, x
+Trying variable: D
+Trying value: p
+Removed <variable, value>: D, p
+Trying value: q
+Added <variable, value>: D, q
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Added <variable, value>: G, q
+Trying variable: C
+Trying value: p
+Removed <variable, value>: C, p
+Trying value: q
+Added <variable, value>: C, q

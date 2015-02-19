@@ -1,0 +1,77 @@
+Heuristics: false, Forward Checking: false
+Trying variable: C
+Trying value: p
+Removed <variable, value>: C, p
+Trying value: q
+Added <variable, value>: C, q
+Trying variable: D
+Trying value: p
+Added <variable, value>: D, p
+Trying variable: E
+Trying value: p
+Removed <variable, value>: E, p
+Trying value: q
+Removed <variable, value>: E, q
+Trying value: r
+Removed <variable, value>: E, r
+Trying value: x
+Added <variable, value>: E, x
+Trying variable: F
+Trying value: p
+Added <variable, value>: F, p
+Trying variable: G
+Trying value: p
+Removed <variable, value>: G, p
+Trying value: q
+Added <variable, value>: G, q
+Trying variable: H
+Trying value: p
+Removed <variable, value>: H, p
+Trying value: q
+Removed <variable, value>: H, q
+Trying value: r
+Added <variable, value>: H, r
+Trying variable: I
+Trying value: p
+Added <variable, value>: I, p
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: I, p
+Trying value: q
+Removed <variable, value>: I, q
+Trying value: r
+Added <variable, value>: I, r
+Trying variable: K
+Trying value: p
+Removed <variable, value>: K, p
+Trying value: q
+Added <variable, value>: K, q
+Trying variable: L
+Trying value: p
+Added <variable, value>: L, p
+Trying variable: J
+Trying value: p
+Removed <variable, value>: J, p
+Trying value: q
+Removed <variable, value>: J, q
+Trying value: r
+Removed <variable, value>: J, r
+Trying value: x
+Removed <variable, value>: J, x
+Removed <variable, value>: L, p
+Trying value: q
+Removed <variable, value>: L, q
+Trying value: r
+Removed <variable, value>: L, r
+Trying value: x
+Added <variable, value>: L, x
+Trying variable: J
+Trying value: p
+Added <variable, value>: J, p

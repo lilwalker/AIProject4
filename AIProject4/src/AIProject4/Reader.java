@@ -1,10 +1,9 @@
 package AIProject4;
-import java.util.ArrayList;
-import java.util.List;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.List;
 
 
 public class Reader {
@@ -24,10 +23,6 @@ public class Reader {
 		// Read in the Reader object's file into a list of Strings
 		List<String> lines = Files.readAllLines(path);
 		int linenum = 1;
-		int vars = 0; //the number of variables
-		int bags = 0; //the number of bags
-		ArrayList<String> inclusive = new ArrayList<String>();
-		ArrayList<String> exclusive = new ArrayList<String>();
 		// lines[0] is just the first header for items so skip it
 		// First set of data: items
 		// Until we get to the next header...

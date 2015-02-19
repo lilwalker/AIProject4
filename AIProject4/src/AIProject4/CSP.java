@@ -18,6 +18,7 @@ public class CSP {
 	Boolean forwardcheckingon;
 	int trys;
 	
+	@SuppressWarnings("unchecked")
 	CSP(ArrayList<Item> items, ArrayList<Bag> bags, Constraints constraints, PrintStream out){
 		this.items = items;
 		this.bags = bags;
@@ -28,6 +29,7 @@ public class CSP {
 		this.log = new LogPrinting(out);
 	}
 	
+	@SuppressWarnings("unchecked")
 	CSP(Constraints constraints, Boolean heuristics, Boolean FC, PrintStream out){
 		this.items = constraints.items;
 		this.bags = constraints.bags;
@@ -40,7 +42,6 @@ public class CSP {
 		this.heuristicson = heuristics;
 		this.forwardcheckingon = FC;
 		log.printOptions(heuristicson, forwardcheckingon);
-		int trys = 0;
 	}
 	
 	public ArrayList<Bag> solve(){
@@ -127,6 +128,7 @@ public class CSP {
 	 */
 	public ArrayList<Bag> LCVList(Item item){
 		ArrayList<Bag> lcv = new ArrayList<Bag>();
+		@SuppressWarnings("unchecked")
 		ArrayList<Bag> unassigned = (ArrayList<Bag>) bags.clone();
 		if (!heuristicson)
 			return this.bags;
@@ -249,10 +251,11 @@ public class CSP {
 		return revised;
 	}
 	
-	private HashMap makeDomains() {
-		HashMap domains = new HashMap<String, ArrayList<Bag>>();
+	@SuppressWarnings("unchecked")
+	private HashMap<String, ArrayList<Bag>> makeDomains() {
+		HashMap<String, ArrayList<Bag>> domains = new HashMap<String, ArrayList<Bag>>();
 		for (Item item: items){
-			domains.put(item.letter, bags.clone());
+			domains.put(item.letter, (ArrayList<Bag>) bags.clone());
 		}
 		return domains;
 	}
