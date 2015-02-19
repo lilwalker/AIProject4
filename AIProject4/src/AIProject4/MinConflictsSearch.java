@@ -27,6 +27,15 @@ public class MinConflictsSearch {
 		this.values = new ArrayList<Bag>(values);
 		this.assignments = new HashMap<Item,Bag>();
 		
+		
+		for (Item item : this.variables) {
+			Bag minBag = this.values.iterator().next();
+			int minVal = minBag.capacity - minBag.weight();
+			for (Bag bag : this.values) {
+				int val = minBag.capacity - minBag.weight();
+			}
+		}
+		
 		Iterator<Bag> it = this.values.iterator();
 		Bag defaultBag = it.next();
 		for (Item item : this.variables) {
