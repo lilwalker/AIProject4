@@ -60,7 +60,7 @@ public class CSP {
 		for (Bag bag : bags){
 			bag.addItem(var);
 			removeAssignedItem(var);
-			State statea = new State(bags, items, unassigned);
+			State statea = new State(bags, items);
 			if (constraints.satisfiesAll(statea)){
 				assignments.add(new Assignment(var, bag));
 				ArrayList<Assignment> result = backtrack(assignments);
@@ -112,7 +112,7 @@ public class CSP {
 			int bestelimdomains = currentdomains;
 			for (Bag bag: unassigned){
 				bag.addItem(item);
-				State statea = new State(bags, items, this.unassigned);
+				State statea = new State(bags, items);
 				if (constraints.satisfiesAll(statea)){
 					int elimdomains = currentdomains - totalDomains();
 					if (elimdomains < bestelimdomains){
@@ -219,12 +219,12 @@ public class CSP {
 		Boolean revised = false;
 		for (int i = 0; i<bags.size(); i++){
 			bags.get(i).addItem(currentarc.item1);
-			State statea = new State(bags, items, unassigned);
+			State statea = new State(bags, items);
 			if (constraints.satisfiesAll(statea)){
 				Boolean remove = true;
 				for (Bag bag: bags){
 					bag.addItem(currentarc.item2);
-					State stateb = new State(bags, items, unassigned);
+					State stateb = new State(bags, items);
 					if (constraints.satisfiesAll(stateb)){
 						remove = false;
 					}

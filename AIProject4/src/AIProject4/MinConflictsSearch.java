@@ -1,5 +1,6 @@
 package AIProject4;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
@@ -23,6 +24,10 @@ public class MinConflictsSearch {
 		for (Item item : this.variables) {
 			this.assignments.put(item, defaultBag);
 		}
+	}
+	
+	private State genState() {
+		return null;
 	}
 	
 	public int numConflicts() {
