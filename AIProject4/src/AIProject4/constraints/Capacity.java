@@ -1,5 +1,7 @@
 package AIProject4.constraints;
 
+import java.util.Map;
+
 import AIProject4.Bag;
 import AIProject4.Item;
 import AIProject4.State;
@@ -18,4 +20,10 @@ public class Capacity implements Constraint {
 		return true;
 	}
 
+	@Override
+	public boolean satisfies(Item variable, Map<Item, Bag> assignments) {
+		Bag bag = assignments.get(variable);
+		
+		return (bag.weight() <= bag.capacity) && (bag.weight() >= bag.capacity * .9);
+	}
 }

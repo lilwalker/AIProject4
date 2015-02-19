@@ -20,6 +20,13 @@ public class Bag {
 		this.contents = new ArrayList<Item>();
 	}
 	
+	public int weight() {
+		int i = 0;
+		for (Item it : contents) {
+			i += it.weight;
+		}
+		return i;
+	}
 	public void addItem(Item item){
 		if (!inBag(item))
 			this.contents.add(item);
