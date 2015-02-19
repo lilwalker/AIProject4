@@ -13,6 +13,9 @@ public class CSP {
 	Constraints constraints;
 	ArrayList<Arc> arcs;
 	HashMap<String, ArrayList<Bag>> domains;
+	LogPrinting log;
+	Boolean heuristicson;
+	Boolean forwardcheckingon;
 	
 	CSP(ArrayList<Item> items, ArrayList<Bag> bags, Constraints constraints){
 		this.items = items;
@@ -21,91 +24,65 @@ public class CSP {
 		this.arcs = new ArrayList<Arc>();
 		this.domains = makeDomains();
 		this.unassigned = (ArrayList<Item>) items.clone();
+		this.log = new LogPrinting();
 	}
 	
-	CSP(Constraints constraints){
+	CSP(Constraints constraints, Boolean heuristics, Boolean FC){
 		this.items = constraints.items;
 		this.bags = constraints.bags;
 		this.constraints = constraints;
 		this.arcs = new ArrayList<Arc>();
 		this.domains = makeDomains();
 		this.unassigned = (ArrayList<Item>) items.clone();
+		this.log = new LogPrinting();
+		this.heuristicson = heuristics;
+		this.forwardcheckingon = FC;
+		log.printOptions(heuristicson, forwardcheckingon);
 	}
 	
 	public ArrayList<Bag> solve(){
 		arcConsistency();
-		System.out.println(arcConsistency());
-		/*System.out.println(domains);
-		Item next = pickMRV();
-		System.out.println(next.letter);
-		ArrayList<Bag> nextbag = LCVList(next);
-		System.out.println(nextbag);*/
 		backtrackingSearch();
 		return bags;
 	}
 
 	public ArrayList<Assignment> backtrackingSearch(){
 		ArrayList<Assignment> assignments = backtrack(new ArrayList<Assignment>());
-		System.out.println(new ArrayPrinter(assignments));
 		return assignments;
 		
 	}
 	
 	public ArrayList<Assignment> backtrack(ArrayList<Assignment> assignments){
-		System.out.println(assignments.size());
 		if (assignments.size()==items.size()){//every assignment is made
 			return assignments;
 		}
 		Item var = pickMRV(assignments);
+		log.printTry(var);
 		for (Bag bag : bags){
 			bag.addItem(var);
+			log.printTry(bag);
 			removeAssignedItem(var);
 			State statea = new State(bags, items);
 			if (constraints.satisfiesAll(statea)){
-				assignments.add(new Assignment(var, bag));
+				Assignment assign = new Assignment(var, bag);
+				assignments.add(assign);
+				log.printAdd(assign);
 				ArrayList<Assignment> result = backtrack(assignments);
 				if (!result.isEmpty())
 					return result;
 			}
 			bag.removeItem(var);
+			log.printRemoved(new Assignment(var, bag));
 			//arcConsistency();
 		}
 		return new ArrayList<Assignment>();
 	}
 	
-/*	public ArrayList<Assignment> backtrackingSearch(){
-		ArrayList<Assignment> assignments = backtrack(new ArrayList<Assignment>());
-		System.out.println(new ArrayPrinter(assignments));
-		return assignments;
-		
-	}
-	
-	public ArrayList<Assignment> backtrack(ArrayList<Assignment> assignments){
-		System.out.println(assignments.size());
-		if (assignments.size()==items.size()){//every assignment is made
-			return assignments;
-		}
-		Item var = pickMRV(assignments);
-		for (Bag bag : LCVList(var)){
-			bag.addItem(var);
-			if (arcConsistency()){
-				assignments.add(new Assignment(var, bag));
-				ArrayList<Assignment> result = backtrack(assignments);
-				if (!result.isEmpty())
-					return result;
-			}
-			bag.removeItem(var);
-			arcConsistency();
-		}
-		return new ArrayList<Assignment>();
-	}*/
-	
 	public ArrayList<Bag> LCVList(Item item){
-		//PriorityQueue<Bag> lcv = new PriorityQueue<Bag>();
-		//Comparator domainsize = new DomainSizeComp();
 		ArrayList<Bag> lcv = new ArrayList<Bag>();
-		//ArrayList<Bag> unassigned = (ArrayList<Bag>) domains.get(item.letter).clone();
 		ArrayList<Bag> unassigned = (ArrayList<Bag>) bags.clone();
+		if (!heuristicson)
+			return this.bags;
 		int currentdomains = totalDomains();
 		while(!unassigned.isEmpty()){
 			Bag mostFlexible = unassigned.get(0);
@@ -131,62 +108,24 @@ public class CSP {
 		return lcv;
 	}
 	
-	private ArrayList<Item> removeAssignedItem(Item item) {
-		for (int u = 0; u < unassigned.size(); u++){
-			if (unassigned.get(u).letter.equals(item.letter)){
-				unassigned.remove(u);
-				return unassigned;
-			}
-		}
-		return unassigned;
-	
-	}
-
-	public Bag pickLCV(Item item){
-		Bag mostFlexible = domains.get(item.letter).get(0);
-		int currentdomains = totalDomains();
-		int bestelimdomains = currentdomains;
-		for (Bag bag : domains.get(item.letter)){
-			bag.addItem(item);
-			if (arcConsistency()){
-				int elimdomains = currentdomains - totalDomains();
-				System.out.println(elimdomains);
-				if (elimdomains < bestelimdomains){
-					mostFlexible = bag;
-					bestelimdomains = elimdomains;
-				}
-			}
-			bag.removeItem(item);
-			arcConsistency();
-		}
-		return mostFlexible;
-	}
-	
-	private int totalDomains() {
-		int total = 0;
-		for (String key : domains.keySet()){
-			total += domains.get(key).size();
-		}
-		return total;
-	}
-
 	public Item pickMRV(ArrayList<Assignment> assignments){
-		
-		ArrayList<Item> unassigned = (ArrayList<Item>) items.clone();
-		for (int a = 0; a < assignments.size(); a++){
-			for (int i = 0; i < unassigned.size(); i++){
-				if (assignments.get(a).item.letter.equals(unassigned.get(i).letter))
-					unassigned.remove(i);
-			}
-		}
 		
 		int minremaining = domains.get(items.get(0).letter).size();
 		Item currentpick = unassigned.get(0);
 		
-		for (Item item : unassigned){
-			if (domains.get(item.letter).size() < minremaining){
-				minremaining = domains.get(item.letter).size();
-				currentpick = item;
+		
+		if (heuristicson){
+			if (forwardcheckingon)
+				arcConsistency();
+			for (Item item : unassigned){
+				if (domains.get(item.letter).size() == minremaining){
+					minremaining = domains.get(item.letter).size();
+					currentpick = degreeHeuristic(currentpick, item);
+				}
+				if (domains.get(item.letter).size() < minremaining){
+					minremaining = domains.get(item.letter).size();
+					currentpick = item;
+				}
 			}
 		}
 		
@@ -195,10 +134,18 @@ public class CSP {
 	}
 	
 	
+	private Item degreeHeuristic(Item item1, Item item2) {
+		int item1score = constraints.constrainsBTW(item1, unassigned);
+		int item2score = constraints.constrainsBTW(item2, unassigned);
+		if (item1score > item2score)
+			return item1;
+		return item2;
+	}
+
 	public Boolean arcConsistency(){
-		for (int i = 0; i < items.size()-1; i++){
-			for (int j = i+1; j<items.size(); j++){
-				arcs.add(new Arc(items.get(i), items.get(j)));
+		for (int i = 0; i < unassigned.size()-1; i++){
+			for (int j = i+1; j<unassigned.size(); j++){
+				arcs.add(new Arc(unassigned.get(i), unassigned.get(j)));
 			}
 		}
 		
@@ -211,7 +158,6 @@ public class CSP {
 				arcs.addAll(constraints.getNeighbors(currentarc.item1));
 			}
 		}
-		//System.out.println(domains);
 		return true;
 	}
 
@@ -255,6 +201,25 @@ public class CSP {
 			domains.put(item.letter, bags.clone());
 		}
 		return domains;
+	}
+	
+	private ArrayList<Item> removeAssignedItem(Item item) {
+		for (int u = 0; u < unassigned.size(); u++){
+			if (unassigned.get(u).letter.equals(item.letter)){
+				unassigned.remove(u);
+				return unassigned;
+			}
+		}
+		return unassigned;
+	
+	}
+	
+	private int totalDomains() {
+		int total = 0;
+		for (String key : domains.keySet()){
+			total += domains.get(key).size();
+		}
+		return total;
 	}
 
 }

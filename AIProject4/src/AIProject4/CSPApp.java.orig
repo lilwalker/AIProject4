@@ -1,12 +1,18 @@
 package AIProject4;
 import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 
 public class CSPApp {
 
 	public static void main(String[] args) throws IOException {
 		
+<<<<<<< HEAD
+		Reader reader = new Reader("samples/input3.txt");
+=======
 		Reader reader = new Reader("samples/input6.txt");
+>>>>>>> 3380b43411f1c1c6e3c93d47a22400f3d0a16e47
 		Constraints constraints = new Constraints(); 
 		constraints = reader.importData();
 		CSP csp = new CSP(constraints, false, false);
@@ -16,13 +22,7 @@ public class CSPApp {
 		
 		System.out.println("######### MIN CONFLICTS ##########");
 		MinConflictsSearch mcs = new MinConflictsSearch(constraints.constraints, constraints.items, constraints.bags);
-		State result = mcs.search(10000);
-		
-		if (result == null) {
-			System.out.println("Min Conflicts reached try limit and gave up, try again?");
-		} else {
-			PrintingUtils.printBags(mcs.search(5000).getBags());
-		}
+		PrintingUtils.printBags(mcs.search(10000).getBags());
 
 	}
 
