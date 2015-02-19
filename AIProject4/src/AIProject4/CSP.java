@@ -42,7 +42,6 @@ public class CSP {
 		this.heuristicson = heuristics;
 		this.forwardcheckingon = FC;
 		log.printOptions(heuristicson, forwardcheckingon);
-		int trys = 0;
 	}
 	
 	public ArrayList<Bag> solve(){
