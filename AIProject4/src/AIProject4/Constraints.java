@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import AIProject4.constraints.Binary;
+import AIProject4.constraints.Capacity;
 import AIProject4.constraints.Constraint;
 import AIProject4.constraints.FitLimits;
 import AIProject4.constraints.MutEx;
@@ -33,6 +34,7 @@ public class Constraints {
 		this.constraints = new ArrayList<Constraint>();
 		this.binaryconstraints = new ArrayList<Binary>();
 		this.mutexconstraints = new ArrayList<MutEx>();
+		this.constraints.add(new Capacity());
 	}
 	
 	/*

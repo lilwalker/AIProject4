@@ -1,8 +1,10 @@
 package AIProject4;
 
+import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
@@ -24,8 +26,11 @@ public class MinConflictsSearch {
 		this.variables = new ArrayList<Item>(variables);
 		this.values = new ArrayList<Bag>(values);
 		this.assignments = new HashMap<Item,Bag>();
-		Bag defaultBag = this.values.iterator().next();
+		
+		Iterator<Bag> it = this.values.iterator();
+		Bag defaultBag = it.next();
 		for (Item item : this.variables) {
+			if (defaultBag.weight() + item.weight > defaultBag.capacity && it.hasNext()) defaultBag = it.next();
 			this.assignments.put(item,defaultBag);
 		}
 		genState();
@@ -96,7 +101,7 @@ public class MinConflictsSearch {
 			assignItem(bestBag, item);
 		}
 		
-		return genState();
+		return null;
 	}
 	
 	
