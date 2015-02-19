@@ -18,8 +18,8 @@ public class Capacity implements Constraint {
 				weight += item.weight;
 				itemsPlaced++;
 				if (weight > bag.capacity) return false;
-				if (weight < bag.capacity*.9) underWeight = true;
 			}
+			if (weight < bag.capacity*.9) underWeight = true;
 		}
 		if (itemsPlaced < state.getItems().size()) {
 			return true;

@@ -1,7 +1,5 @@
 package AIProject4;
 import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 
 
 public class CSPApp {
@@ -18,8 +16,12 @@ public class CSPApp {
 		
 		System.out.println("######### MIN CONFLICTS ##########");
 		MinConflictsSearch mcs = new MinConflictsSearch(constraints.constraints, constraints.items, constraints.bags);
-		PrintingUtils.printBags(mcs.search(10000).getBags());
-
+		State result = mcs.search(50000);
+		
+		if (result == null) {
+			System.out.println("Min Conflicts reached try limit and gave up, try again?");
+		} else {
+			PrintingUtils.printBags(result.getBags());
+		}
 	}
-
 }
