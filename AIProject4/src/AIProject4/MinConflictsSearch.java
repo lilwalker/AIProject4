@@ -1,17 +1,19 @@
 package AIProject4;
 
-import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
 import AIProject4.constraints.Constraint;
 
-
+/**
+ * Min-Conflicts search
+ * @author khazhy
+ *
+ */
 public class MinConflictsSearch {
 
 	Collection<Constraint> constraints;
@@ -21,26 +23,52 @@ public class MinConflictsSearch {
 	Random r = new Random();
 	List<Item> conflicts;
 	
+	/**
+	 * Places items into bags putting into the most open bag at the time. All items will be assigned, even if there are conflicts
+	 * @param constraints
+	 * @param variables
+	 * @param values
+	 */
 	public MinConflictsSearch(Collection<Constraint> constraints, Collection<Item> variables, Collection<Bag> values) {
 		this.constraints = constraints;
 		this.variables = new ArrayList<Item>(variables);
 		this.values = new ArrayList<Bag>(values);
 		this.assignments = new HashMap<Item,Bag>();
 		
-		Iterator<Bag> it = this.values.iterator();
-		Bag defaultBag = it.next();
+		
+		// Greedy algorithm for placing items - always put the item in the bag with the most remaining capacity.
 		for (Item item : this.variables) {
-			if (defaultBag.weight() + item.weight > defaultBag.capacity && it.hasNext()) defaultBag = it.next();
-			this.assignments.put(item,defaultBag);
+			Bag maxBag = this.values.iterator().next();
+			int maxVal = maxBag.capacity - maxBag.weight();
+			for (Bag bag : this.values) {
+				int val = bag.capacity - bag.weight();
+				if (val > maxVal) {
+					maxVal = val;
+					maxBag = bag;
+				}
+			}
+			
+			this.assignments.put(item, maxBag);
+			maxBag.contents.add(item);	
 		}
 		genState();
 	}
 	
+	/**
+	 * Assign an item and regenerate the state
+	 * @param b
+	 * @param i
+	 */
 	private void assignItem(Bag b, Item i) {
 		this.assignments.put(i,b);
 		genState();
 	}
 	
+	/**
+	 * Set the bag contenst according to our assignments.
+	 * State is used by the constraints
+	 * @return
+	 */
 	private State genState() {
 		for (Bag bag : this.values) {
 			bag.contents = new ArrayList<Item>();
@@ -53,6 +81,10 @@ public class MinConflictsSearch {
 		return new State(this.values, this.variables);
 	}
 	
+	/**
+	 * Finds the number of variables that are conflicting
+	 * @return
+	 */
 	public int findConflicts() {
 		this.conflicts = new ArrayList<Item>();
 		for (Item item : variables) {
@@ -61,6 +93,18 @@ public class MinConflictsSearch {
 		return conflicts.size();
 	}
 	
+	public boolean stateCorrect() {
+		State s = genState();
+		for (Constraint c : constraints) {
+			if (!c.satisfies(s)) return false;
+		}
+		return true;
+	}
+	/**
+	 * Finds the number of conflicts for one variable
+	 * @param item
+	 * @return
+	 */
 	public int numConflicts(Item item) {
 		int i = 0;
 		for (Constraint constraint : constraints) {
@@ -71,6 +115,11 @@ public class MinConflictsSearch {
 		return i;
 	}
 	
+	/**
+	 * Search up to max times. Does not handle local minima well, might want to try several times.
+	 * @param max
+	 * @return
+	 */
 	public State search(int max) {
 		int i = 0;
 		
@@ -80,7 +129,13 @@ public class MinConflictsSearch {
 			findConflicts();
 			
 			if (conflicts.size() == 0) {
-				return genState();
+				if (stateCorrect()) {
+					System.out.println("MinConflicts found after " + i);
+					return genState();
+				} else {
+					System.out.println("MinConflicts has no variable conflicts, but the state isn't correct. Probably no solution.");
+					return null;
+				}
 			}
 			
 			Item item = this.conflicts.get(r.nextInt(this.conflicts.size())); // Grab random item
