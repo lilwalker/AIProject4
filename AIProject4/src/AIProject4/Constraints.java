@@ -78,19 +78,19 @@ public class Constraints {
 	public void addBinaryEq(String string) {
 		String[] parts = string.split(" ");
 		this.constraints.add(new Binary.Equals(parts[0], parts[1]));
-		//this.binaryconstraints.add(new Binary.Equals(parts[0], parts[1]));
+		this.binaryconstraints.add(new Binary.Equals(parts[0], parts[1]));
 	}
 	
 	public void addBinaryNotEq(String string) {
 		String[] parts = string.split(" ");
 		this.constraints.add(new Binary.NotEquals(parts[0], parts[1]));
-		//this.binaryconstraints.add(new Binary.NotEquals(parts[0], parts[1]));
+		this.binaryconstraints.add(new Binary.NotEquals(parts[0], parts[1]));
 	}
 
 	public void addMutex(String string) {
 		String[] parts = string.split(" ");
 		this.constraints.add(new MutEx(parts[0], parts[1], parts[2], parts[3]));
-		//this.mutexconstraints.add(new MutEx(parts[0], parts[1], parts[2], parts[3]));
+		this.mutexconstraints.add(new MutEx(parts[0], parts[1], parts[2], parts[3]));
 	}
 	
 	public Boolean satisfiesAll(State state){
@@ -125,7 +125,7 @@ public class Constraints {
 	
 	public int constrainsBTW(Item item, ArrayList<Item> unassigned){
 		int score = 0;
-		for (Item unassign:unassigned){
+		for (@SuppressWarnings("unused") Item unassign:unassigned){
 			for (Binary bin:binaryconstraints){
 				if (bin.getItem1().equals(item.letter)||bin.getItem2().equals(item.letter))
 					score++;
