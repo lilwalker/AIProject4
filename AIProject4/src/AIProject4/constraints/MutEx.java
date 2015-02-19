@@ -1,6 +1,7 @@
 package AIProject4.constraints;
 
 import java.util.ArrayList;
+import java.util.Map;
 
 import AIProject4.Bag;
 import AIProject4.Item;
@@ -68,6 +69,34 @@ public class MutEx implements Constraint {
 	
 	public String getItem2(){
 		return item2;
+	}
+
+	@Override
+	public boolean satisfies(Item variable, Map<Item, Bag> assignments) {
+		if (!variable.letter.equals(item1) && !variable.letter.equals(item2)) {
+			return true;
+		}
+		boolean mutex1 = false;
+		boolean mutex2 = false;
+		for (Bag bag : assignments.values()) {
+			if (bag.letter.equals(bag1)) {
+				for (Item item : bag.contents) {
+					if (item.letter.equals(item1)) {
+						mutex1 = true;
+						break;
+					}
+				}
+			}
+			if (bag.letter.equals(bag2)) {
+				for (Item item: bag.contents) {
+					if (item.letter.equals(item2)) {
+						mutex2 = true;
+						break;
+					}
+				}
+			}
+		}
+		return !(mutex1 && mutex2);
 	}
 
 }

@@ -1,6 +1,7 @@
 package AIProject4.constraints;
 
 import java.util.ArrayList;
+import java.util.Map;
 
 import AIProject4.Bag;
 import AIProject4.Item;
@@ -30,5 +31,12 @@ public class FitLimits implements Constraint {
 				assigned.add(item.letter);
 		}
 		return (assigned.size()==state.getItems().size());
+	}
+
+	@Override
+	public boolean satisfies(Item variable, Map<Item, Bag> assignments) {
+		Bag bag = assignments.get(variable);
+		
+		return (bag.contents.size() >= lower) && (bag.contents.size() <= higher);
 	}
 }

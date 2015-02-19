@@ -2,6 +2,7 @@ package AIProject4.constraints;
 
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import AIProject4.Bag;
@@ -49,6 +50,13 @@ public abstract class Unary implements Constraint {
 			if (this.bags.contains(bag)) return true;
 			return false;
 		}
+
+		@Override
+		public boolean satisfies(Item variable, Map<Item, Bag> assignments) {
+			if (!variable.letter.equals(item)) return true;
+			if (this.bags.contains(assignments.get(variable).letter)) return true;
+			return false;
+		}
 	}
 	
 	public static class Exclusive extends Unary {
@@ -60,6 +68,13 @@ public abstract class Unary implements Constraint {
 		public boolean itemAllowedInBag(String item, String bag) {
 			if (!item.equals(this.item)) return true;
 			if (this.bags.contains(bag)) return false;
+			return true;
+		}
+
+		@Override
+		public boolean satisfies(Item variable, Map<Item, Bag> assignments) {
+			if (!variable.letter.equals(item)) return true;
+			if (this.bags.contains(assignments.get(variable).letter)) return false;
 			return true;
 		}
 	}

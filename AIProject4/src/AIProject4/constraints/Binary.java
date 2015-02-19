@@ -2,6 +2,7 @@ package AIProject4.constraints;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Map;
 
 import AIProject4.Assignment;
 import AIProject4.Bag;
@@ -41,7 +42,24 @@ public abstract class Binary implements Constraint {
 			if (satisfied==1) return true;
 			return false;
 		}
-		
+
+		@Override
+		public boolean satisfies(Item variable, Map<Item, Bag> assignments) {
+			if (!variable.letter.equals(item1) && !variable.letter.equals(item2)) {
+				return true;
+			}
+			
+			Bag bag = assignments.get(variable);
+			
+			boolean citem1 = false;
+			boolean citem2 = false;
+			for (Item item : bag.contents) {
+				if (item.letter.equals(item1)) citem1 = true;
+				if (item.letter.equals(item2)) citem2 = true;
+			}
+			
+			return citem1 && citem2;
+		}
 	}
 	
 	public static class NotEquals extends Binary {
@@ -66,6 +84,24 @@ public abstract class Binary implements Constraint {
 			if (!(assigned.contains(item1) && assigned.contains(item2))) return true;
 			if (satisfied==1) return true;
 			return false;
+		}
+
+		@Override
+		public boolean satisfies(Item variable, Map<Item, Bag> assignments) {
+			if (!variable.letter.equals(item1) && !variable.letter.equals(item2)) {
+				return true;
+			}
+			
+			Bag bag = assignments.get(variable);
+			
+			boolean citem1 = false;
+			boolean citem2 = false;
+			for (Item item : bag.contents) {
+				if (item.letter.equals(item1)) citem1 = true;
+				if (item.letter.equals(item2)) citem2 = true;
+			}
+			
+			return !(citem1 && citem2);
 		}
 	}
 	
