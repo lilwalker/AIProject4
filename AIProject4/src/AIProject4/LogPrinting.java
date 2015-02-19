@@ -1,14 +1,22 @@
 package AIProject4;
 
+import java.io.PrintStream;
+
 public class LogPrinting {
 
+	PrintStream out;
+	
+	public LogPrinting(PrintStream out) {
+		this.out = out;
+	}
+	
 	public String printOptions(Boolean H, Boolean FC){
 		StringBuilder sb = new StringBuilder();
 		sb.append("Heuristics: ");
 		sb.append(H);
 		sb.append(", Forward Checking: ");
 		sb.append(FC);
-		System.out.println(sb.toString());
+		out.println(sb.toString());
 		return sb.toString();
 	}
 	
@@ -22,7 +30,7 @@ public class LogPrinting {
 		sb.append(assignment.item.letter);
 		sb.append(", ");
 		sb.append(assignment.bag.letter);
-		System.out.println(sb.toString());
+		out.println(sb.toString());
 		return sb.toString();
 	}
 	
@@ -32,7 +40,7 @@ public class LogPrinting {
 		sb.append(assignment.item.letter);
 		sb.append(", ");
 		sb.append(assignment.bag.letter);
-		System.out.println(sb.toString());
+		out.println(sb.toString());
 		return sb.toString();
 	}
 	
@@ -40,7 +48,7 @@ public class LogPrinting {
 		StringBuilder sb = new StringBuilder();
 		sb.append("Trying variable: ");
 		sb.append(item.letter);
-		System.out.println(sb.toString());
+		out.println(sb.toString());
 		return sb.toString();
 	}
 	
@@ -48,7 +56,7 @@ public class LogPrinting {
 		StringBuilder sb = new StringBuilder();
 		sb.append("Trying value: ");
 		sb.append(bag.letter);
-		System.out.println(sb.toString());
+		out.println(sb.toString());
 		return sb.toString();
 	}
 	

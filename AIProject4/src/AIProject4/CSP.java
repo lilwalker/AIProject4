@@ -1,9 +1,8 @@
 package AIProject4;
 
+import java.io.PrintStream;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.HashMap;
-import java.util.PriorityQueue;
 
 public class CSP {
 	
@@ -19,17 +18,17 @@ public class CSP {
 	Boolean forwardcheckingon;
 	int trys;
 	
-	CSP(ArrayList<Item> items, ArrayList<Bag> bags, Constraints constraints){
+	CSP(ArrayList<Item> items, ArrayList<Bag> bags, Constraints constraints, PrintStream out){
 		this.items = items;
 		this.bags = bags;
 		this.constraints = constraints;
 		this.arcs = new ArrayList<Arc>();
 		this.domains = makeDomains();
 		this.unassigned = (ArrayList<Item>) items.clone();
-		this.log = new LogPrinting();
+		this.log = new LogPrinting(out);
 	}
 	
-	CSP(Constraints constraints, Boolean heuristics, Boolean FC){
+	CSP(Constraints constraints, Boolean heuristics, Boolean FC, PrintStream out){
 		this.items = constraints.items;
 		this.bags = constraints.bags;
 		this.constraints = constraints;
@@ -37,7 +36,7 @@ public class CSP {
 		this.domains = makeDomains();
 		this.arcdomains = makeDomains();
 		this.unassigned = (ArrayList<Item>) items.clone();
-		this.log = new LogPrinting();
+		this.log = new LogPrinting(out);
 		this.heuristicson = heuristics;
 		this.forwardcheckingon = FC;
 		log.printOptions(heuristicson, forwardcheckingon);
@@ -46,8 +45,7 @@ public class CSP {
 	
 	public ArrayList<Bag> solve(){
 		//arcConsistency();
-		ArrayList<Assignment> assigns = backtrackingSearch();
-		//new ArrayPrinter(assigns);
+		backtrackingSearch();
 		//System.out.println("Conflict Checks: "+trys);
 		return bags;
 	}
