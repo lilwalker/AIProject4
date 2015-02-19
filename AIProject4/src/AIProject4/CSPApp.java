@@ -9,7 +9,7 @@ public class CSPApp {
 		Reader reader = new Reader("samples/input6.txt");
 		Constraints constraints = new Constraints(); 
 		constraints = reader.importData();
-		CSP csp = new CSP(constraints, false, false);
+		CSP csp = new CSP(constraints, true, false);
 		csp.solve();
 		
 		System.out.print(PrintingUtils.genBagOutput(csp.bags));
