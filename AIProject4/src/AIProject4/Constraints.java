@@ -78,13 +78,13 @@ public class Constraints {
 	public void addBinaryEq(String string) {
 		String[] parts = string.split(" ");
 		this.constraints.add(new Binary.Equals(parts[0], parts[1]));
-		//this.binaryconstraints.add(new Binary.Equals(parts[0], parts[1]));
+		this.binaryconstraints.add(new Binary.Equals(parts[0], parts[1]));
 	}
 	
 	public void addBinaryNotEq(String string) {
 		String[] parts = string.split(" ");
 		this.constraints.add(new Binary.NotEquals(parts[0], parts[1]));
-		//this.binaryconstraints.add(new Binary.NotEquals(parts[0], parts[1]));
+		this.binaryconstraints.add(new Binary.NotEquals(parts[0], parts[1]));
 	}
 
 	public void addMutex(String string) {

@@ -50,55 +50,67 @@ public class CSP {
 		return bags;
 	}
 
+	/* 
+	 * backTrackingSearch initiates the backtracking algorithm
+	 */
 	public ArrayList<Assignment> backtrackingSearch(){
 		ArrayList<Assignment> assignments = backtrack(new ArrayList<Assignment>());
 		return assignments;
 		
 	}
 	
+	/* 
+	 * backtracking search algorithm. assignments of values to variables (bags to items) 
+	 * and checking to make sure the assignment is within the specified constraints. 
+	 * If the assignment is valid, the next variable is assigned a value and so on. 
+	 * If an assignment is not valid, backtracking occurs and the program backs up the 
+	 * search tree to the last satisfied assignment and makes another assignment.
+	 */
 	public ArrayList<Assignment> backtrack(ArrayList<Assignment> assignments){
 		if (unassigned.isEmpty()){//every assignment is made
-			return assignments;
+			return assignments;//done. return the assignments
 		}
-		Item var = pickMRV(assignments);
-		log.printTry(var);
-		for (Bag bag : bags){
+		Item var = pickMRV(assignments); //Pick which variable to assign first
+		log.printTry(var); //add to log file
+		for (Bag bag : bags){//try adding the variable to each bag
 			bag.addItem(var);
 			log.printTry(bag);
-			removeAssignedItem(var);
-			State statea = new State(bags, items);
-			if (forwardcheckingon){
-				if(arcConsistency()){
-					trys++;
-					if (constraints.satisfiesAll(statea)){
+			removeAssignedItem(var);//remove from list of unassigned variables
+			State statea = new State(bags, items);//make a state with the new bag set
+			if (forwardcheckingon){//only do if forward chekcing is enabled
+				if(arcConsistency()){//check arc consistency for forward checking
+					if (constraints.satisfiesAll(statea)){//if all constraints are satisfied
 						Assignment assign = new Assignment(var, bag);
-						assignments.add(assign);
+						assignments.add(assign);//add assignment of value to variable to list
 						log.printAdd(assign);
-						ArrayList<Assignment> result = backtrack(assignments);
-						if (!result.isEmpty())
+						ArrayList<Assignment> result = backtrack(assignments);//call backtracking on altered CSP
+						if (!result.isEmpty())//if there is a result, return
 							return result;
 					}
 				}
 			}
 			else{
 				trys++;
-				if (constraints.satisfiesAll(statea)){
+				if (constraints.satisfiesAll(statea)){//if all constraints are satisfied
 					Assignment assign = new Assignment(var, bag);
 					assignments.add(assign);
 					log.printAdd(assign);
-					ArrayList<Assignment> result = backtrack(assignments);
-					if (!result.isEmpty())
+					ArrayList<Assignment> result = backtrack(assignments);//call backtracking on altered CSP
+					if (!result.isEmpty())//if there is a result, return
 						return result;
 				}
 			}
-			bag.removeItem(var);
-			unassigned.add(var);
+			bag.removeItem(var);//if not successful assignment, remove item from bag
+			unassigned.add(var);//add variable back to unassigned
 			log.printRemoved(new Assignment(var, bag));
-			assignments = removeAssignment(assignments, new Assignment(var, bag));
+			assignments = removeAssignment(assignments, new Assignment(var, bag));//remove assignment from list
 		}
 		return new ArrayList<Assignment>();
 	}
 	
+	/* 
+	 * helper to remove item from the assigned list
+	 */
 	private ArrayList<Assignment> removeAssignment(ArrayList<Assignment> assignments, Assignment assignment) {
 		for (int a = 0; a < assignments.size(); a++){
 			if (assignments.get(a).item.letter.equals(assignment.item.letter)){
@@ -109,19 +121,23 @@ public class CSP {
 		return assignments;
 	}
 
+	/*
+	 * Order the list of values for the variable item according to the change in domain 
+	 * caused by the assignment. Choose least changes to domain
+	 */
 	public ArrayList<Bag> LCVList(Item item){
 		ArrayList<Bag> lcv = new ArrayList<Bag>();
 		ArrayList<Bag> unassigned = (ArrayList<Bag>) bags.clone();
 		if (!heuristicson)
 			return this.bags;
 		int currentdomains = totalDomains();
-		while(!unassigned.isEmpty()){
+		while(!unassigned.isEmpty()){//check all unassigned for new domain
 			Bag mostFlexible = unassigned.get(0);
 			int bestelimdomains = currentdomains;
 			for (Bag bag: unassigned){
 				bag.addItem(item);
 				State statea = new State(bags, items);
-				if (constraints.satisfiesAll(statea)){
+				if (constraints.satisfiesAll(statea)){//check if constraints satisfied
 					int elimdomains = currentdomains - totalDomains();
 					if (elimdomains < bestelimdomains){
 						mostFlexible = bag;
@@ -131,7 +147,7 @@ public class CSP {
 				}
 				bag.removeItem(item);
 				this.unassigned.add(item);
-				arcConsistency();
+				arcConsistency();//call arc consistency to update domains
 			}
 			lcv.add(mostFlexible);
 			unassigned.remove(mostFlexible);
@@ -139,6 +155,9 @@ public class CSP {
 		return lcv;
 	}
 	
+	/* 
+	 * pick variable to assign by the fewest number of possible values in its domain
+	 */
 	public Item pickMRV(ArrayList<Assignment> assignments){
 		
 		int minremaining = domains.get(items.get(0).letter).size();
@@ -164,7 +183,9 @@ public class CSP {
 		
 	}
 	
-	
+	/*
+	 * degree heuristic choses the item with the fewest associated constraints
+	 */
 	private Item degreeHeuristic(Item item1, Item item2) {
 		int item1score = constraints.constrainsBTW(item1, unassigned);
 		int item2score = constraints.constrainsBTW(item2, unassigned);
@@ -173,6 +194,7 @@ public class CSP {
 		return item2;
 	}
 
+	//assembles list of arcs. checks all arcs to ensure domains are valid
 	public Boolean arcConsistency(){
 		for (int i = 0; i < unassigned.size()-1; i++){
 			for (int j = i+1; j<unassigned.size(); j++){
@@ -184,6 +206,7 @@ public class CSP {
 			Arc currentarc = arcs.remove(0);
 			if (revise(currentarc)){
 				if (arcdomains.get(currentarc.item1.letter).isEmpty()){
+					//if the domain is empty, the assignment is not valid, return false
 					return false;
 				}
 				arcs.addAll(constraints.getNeighbors(currentarc.item1));
@@ -191,7 +214,7 @@ public class CSP {
 		}
 		return true;
 	}
-
+	//changes the domain for the given arc
 	private Boolean revise(Arc currentarc) {
 		Boolean revised = false;
 		for (int i = 0; i<bags.size(); i++){
